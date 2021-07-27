@@ -270,3 +270,100 @@ Stack Trace:
 #3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
 #4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2021-07-27 19:12:37 Error: [MissingControllerException] Controller class LutarosController could not be found.
+Exception Attributes: array (
+  'class' => 'LutarosController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/lutaros
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-07-27 19:12:40 Error: [MissingControllerException] Controller class LutarsController could not be found.
+Exception Attributes: array (
+  'class' => 'LutarsController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/lutars
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-07-27 20:55:21 Error: [Error] Call to a member function diff() on string
+Request URL: /ufc_rankings/lutadors
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(971): include()
+#1 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2021-07-27 20:56:07 Error: [Error] Object of class DateInterval could not be converted to string
+Request URL: /ufc_rankings/lutadors
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\Helper\HtmlHelper.php(945): sprintf('<td%s>%s</td>', '', Object(DateInterval))
+#1 C:\xampp\apps\ufc_rankings\View\Lutadors\index.ctp(27): HtmlHelper->tableCells(Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(971): include('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#4 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#5 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#6 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#7 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#8 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2021-07-27 20:56:53 Error: [Error] Object of class DateTime could not be converted to string
+Request URL: /ufc_rankings/lutadors
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(971): include()
+#1 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2021-07-27 20:57:10 Error: [Error] Object of class DateTime could not be converted to string
+Request URL: /ufc_rankings/lutadors
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(971): include()
+#1 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2021-07-27 21:21:54 Error: [Error] Class 'TimeZone' not found
+Request URL: /ufc_rankings/lutadors
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(971): include()
+#1 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2021-07-27 21:24:12 Error: [Error] Object of class DateInterval could not be converted to string
+Request URL: /ufc_rankings/lutadors
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(971): include()
+#1 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2021-07-27 21:24:22 Error: [Error] Object of class DateInterval could not be converted to string
+Request URL: /ufc_rankings/lutadors
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(971): include()
+#1 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
