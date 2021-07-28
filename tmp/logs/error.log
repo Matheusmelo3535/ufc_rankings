@@ -367,3 +367,386 @@ Stack Trace:
 #5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
 #6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #7 {main}
+2021-07-28 13:11:17 Error: [MissingControllerException] Controller class LutdorsController could not be found.
+Exception Attributes: array (
+  'class' => 'LutdorsController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/lutdors
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-07-28 13:16:11 Error: [MissingActionException] Action LutadorsController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'LutadorsController',
+  'action' => 'edit',
+)
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-07-28 13:37:23 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/2
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(26): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('2')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 13:38:36 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '2' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/2
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(26): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('2')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 13:41:42 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(26): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('1')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 13:47:05 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/3
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(26): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('3')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 13:52:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(26): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('1')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 13:54:23 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('1')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 13:56:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('1')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 13:56:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('1')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 13:56:49 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('1')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 13:56:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('1')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 13:57:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1754): Model->_doSave(Array, Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(2515): Model->save(Array, Array)
+#6 C:\xampp\cake\lib\Cake\Model\Model.php(2287): Model->saveAssociated(Array, Array)
+#7 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->saveAll(Array)
+#8 [internal function]: LutadorsController->edit('1')
+#9 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2021-07-28 13:57:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1754): Model->_doSave(Array, Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(2515): Model->save(Array, Array)
+#6 C:\xampp\cake\lib\Cake\Model\Model.php(2287): Model->saveAssociated(Array, Array)
+#7 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->saveAll(Array)
+#8 [internal function]: LutadorsController->edit('1')
+#9 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2021-07-28 13:58:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1754): Model->_doSave(Array, Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(2515): Model->save(Array, Array)
+#6 C:\xampp\cake\lib\Cake\Model\Model.php(2287): Model->saveAssociated(Array, Array)
+#7 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->saveAll(Array)
+#8 [internal function]: LutadorsController->edit('1')
+#9 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2021-07-28 13:58:59 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '3' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/3
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1754): Model->_doSave(Array, Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(2515): Model->save(Array, Array)
+#6 C:\xampp\cake\lib\Cake\Model\Model.php(2287): Model->saveAssociated(Array, Array)
+#7 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->saveAll(Array)
+#8 [internal function]: LutadorsController->edit('3')
+#9 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2021-07-28 14:02:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('1')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 14:02:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('1')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 14:05:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('1')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 14:05:29 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('1')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 14:05:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '6' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/6
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('6')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 14:12:52 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '7' for key 'PRIMARY'
+Request URL: /ufc_rankings/lutadors/edit/7
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Lutador), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1760): Model->_doSave(Array, Array)
+#5 C:\xampp\apps\ufc_rankings\Controller\LutadorsController.php(27): Model->save(Array)
+#6 [internal function]: LutadorsController->edit('7')
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#10 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2021-07-28 15:18:12 Error: [MissingActionException] Action LutadorsController::view1() could not be found.
+Exception Attributes: array (
+  'controller' => 'LutadorsController',
+  'action' => 'view1',
+)
+Request URL: /ufc_rankings/lutadors/view1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-07-28 15:20:33 Error: [MissingActionException] Action LutadorsController::view1() could not be found.
+Exception Attributes: array (
+  'controller' => 'LutadorsController',
+  'action' => 'view1',
+)
+Request URL: /ufc_rankings/lutadors/view1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-07-28 15:21:29 Error: [MissingActionException] Action LutadorsController::view1() could not be found.
+Exception Attributes: array (
+  'controller' => 'LutadorsController',
+  'action' => 'view1',
+)
+Request URL: /ufc_rankings/lutadors/view1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-07-28 15:21:32 Error: [MissingActionException] Action LutadorsController::view1() could not be found.
+Exception Attributes: array (
+  'controller' => 'LutadorsController',
+  'action' => 'view1',
+)
+Request URL: /ufc_rankings/lutadors/view1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-07-28 15:22:18 Error: [MissingActionException] Action LutadorsController::lutadors() could not be found.
+Exception Attributes: array (
+  'controller' => 'LutadorsController',
+  'action' => 'lutadors',
+)
+Request URL: /ufc_rankings/lutadors/lutadors/view/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
