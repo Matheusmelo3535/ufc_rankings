@@ -286,9 +286,9 @@
  * then the value of `Config.timezone` will be used. This feature allows you to set users' timezone just
  * once instead of passing it each time in function calls.
  */
-date_default_timezone_set('America/Sao_Paulo');
-setlocale(LC_ALL, 'pt_BR', 'pt_BR.iso-8859-1', 'pt_BR.utf-8', 'portuguese'); 
-Configure::write('Config.language', 'pt_BR');
+	date_default_timezone_set('America/Sao_Paulo');
+	setlocale(LC_ALL, 'pt_BR', 'pt_BR.iso-8859-1', 'pt_BR.utf-8', 'portuguese'); 
+	Configure::write('Config.language', 'pt_BR');
 
 /**
  * Cache Engine Configuration
