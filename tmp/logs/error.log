@@ -750,3 +750,69 @@ Stack Trace:
 #1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
 #2 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2021-07-29 13:55:08 Error: [MissingActionException] Action LutadorsController::text.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LutadorsController',
+  'action' => 'text.php',
+)
+Request URL: /ufc_rankings/lutadors/text.php
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-07-29 13:55:42 Error: [MissingControllerException] Controller class TestController could not be found.
+Exception Attributes: array (
+  'class' => 'TestController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/test
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-07-29 15:25:42 Error: [CakeException] Fixture invalid: Count of fields does not match count of values in LutadorFixture
+The field 'rank' is in the data fixture but not in the schema.
+The field 'nome' is in the data fixture but not in the schema.
+The field 'altura' is in the data fixture but not in the schema.
+The field 'peso' is in the data fixture but not in the schema.
+The field 'idade' is in the data fixture but not in the schema.
+The field 'vitorias' is in the data fixture but not in the schema.
+The field 'derrotas' is in the data fixture but not in the schema.
+The field 'estilo_de_luta' is in the data fixture but not in the schema.
+
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(234): CakeTestFixture->insert(Object(Mysql))
+#1 C:\xampp\cake\lib\Cake\TestSuite\CakeTestCase.php(82): CakeFixtureManager->load(Object(LutadorTest))
+#2 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#3 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(LutadorTest), Object(PHPUnit_Framework_TestResult))
+#4 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(348): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#5 C:\xampp\cake\lib\Cake\TestSuite\CakeTestRunner.php(75): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#6 C:\xampp\cake\lib\Cake\TestSuite\CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#7 C:\xampp\cake\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(275): CakeTestSuiteCommand->run(Array)
+#8 C:\xampp\cake\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(112): CakeTestSuiteDispatcher->_runTestCase()
+#9 C:\xampp\cake\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(129): CakeTestSuiteDispatcher->dispatch()
+#10 C:\xampp\htdocs\ufc_rankings\test.php(112): CakeTestSuiteDispatcher::run()
+#11 {main}
+2021-07-29 15:27:59 Error: [CakeException] Fixture invalid: Count of fields does not match count of values in LutadorFixture
+The field 'rank' is in the data fixture but not in the schema.
+The field 'nome' is in the data fixture but not in the schema.
+The field 'altura' is in the data fixture but not in the schema.
+The field 'peso' is in the data fixture but not in the schema.
+The field 'idade' is in the data fixture but not in the schema.
+The field 'vitorias' is in the data fixture but not in the schema.
+The field 'derrotas' is in the data fixture but not in the schema.
+The field 'estilo_de_luta' is in the data fixture but not in the schema.
+
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\TestSuite\Fixture\CakeFixtureManager.php(234): CakeTestFixture->insert(Object(Mysql))
+#1 C:\xampp\cake\lib\Cake\TestSuite\CakeTestCase.php(82): CakeFixtureManager->load(Object(LutadorTest))
+#2 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(775): CakeTestCase->run(Object(PHPUnit_Framework_TestResult))
+#3 C:\xampp\php\pear\PHPUnit\Framework\TestSuite.php(745): PHPUnit_Framework_TestSuite->runTest(Object(LutadorTest), Object(PHPUnit_Framework_TestResult))
+#4 C:\xampp\php\pear\PHPUnit\TextUI\TestRunner.php(348): PHPUnit_Framework_TestSuite->run(Object(PHPUnit_Framework_TestResult), false, Array, Array, false)
+#5 C:\xampp\cake\lib\Cake\TestSuite\CakeTestRunner.php(75): PHPUnit_TextUI_TestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#6 C:\xampp\cake\lib\Cake\TestSuite\CakeTestSuiteCommand.php(98): CakeTestRunner->doRun(Object(PHPUnit_Framework_TestSuite), Array)
+#7 C:\xampp\cake\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(275): CakeTestSuiteCommand->run(Array)
+#8 C:\xampp\cake\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(112): CakeTestSuiteDispatcher->_runTestCase()
+#9 C:\xampp\cake\lib\Cake\TestSuite\CakeTestSuiteDispatcher.php(129): CakeTestSuiteDispatcher->dispatch()
+#10 C:\xampp\htdocs\ufc_rankings\test.php(112): CakeTestSuiteDispatcher::run()
+#11 {main}
