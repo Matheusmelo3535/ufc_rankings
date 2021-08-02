@@ -1,8 +1,6 @@
 <?php
 
 App::uses('AppController', 'Controller');
-App::uses('Lutador', 'Model');
-
 
 class LutadorsController extends AppController {
         
@@ -19,6 +17,9 @@ class LutadorsController extends AppController {
                 $this->redirect('/lutadors');
             }
         }
+        $fields = array('Categoria.id', 'Categoria.nome_categoria');
+        $categorias = $this->Lutador->Categoria->find('list', compact('fields'));
+        $this->set('categorias', $categorias);
     }
     
     public function edit($id = null) {
@@ -37,12 +38,16 @@ class LutadorsController extends AppController {
             'Lutador.peso', 
             'Lutador.idade', 
             'Lutador.vitorias', 
-            'Lutador.derrotas', 
+            'Lutador.derrotas',
+            'Lutador.categoria_id', 
             'Lutador.rank',
             'Lutador.estilo_de_luta');
             $conditions = array('Lutador.id' => $id);
             $this->request->data = $this->Lutador->find('first', compact('fields', 'conditions'));
         }
+        $fields = array('Categoria.id', 'Categoria.nome_categoria');
+        $categorias = $this->Lutador->Categoria->find('list', compact('fields'));
+        $this->set('categorias', $categorias);
     }
 
     public function view($id = null) {

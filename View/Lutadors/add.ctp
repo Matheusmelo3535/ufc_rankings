@@ -3,7 +3,7 @@ $form = $this->Form->create('Lutador');
 $form .= $this->Form->input('Lutador.nome', array('required' => false));
 $form .= $this->Form->input('Lutador.altura', array('required' => false));
 $form .= $this->Form->input('Lutador.peso');
-$form .= $this->Form->input('Lutador.id_categoria', array(
+$form .= $this->Form->input('Lutador.categoria_id', array(
     'type' => 'select',
     'options' => $categorias
 

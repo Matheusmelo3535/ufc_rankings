@@ -4,7 +4,11 @@ $form .= $this->Form->input('Lutador.nome');
 $form .= $this->Form->hidden('Lutador.id');
 $form .= $this->Form->input('Lutador.altura');
 $form .= $this->Form->input('Lutador.peso');
-$form .= $this->Form->hidden('Lutador.id_categoria', array('value' => 1));
+$form .= $this->Form->input('Lutador.categoria_id', array(
+    'type' => 'select',
+    'options' => $categorias
+
+));
 $form .= $this->Form->input('Lutador.idade', array(
     'label' => 'Data de Nascimento',
     'dateFormat' => 'DMY',
