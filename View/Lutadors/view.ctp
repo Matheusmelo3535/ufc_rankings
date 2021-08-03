@@ -1,5 +1,5 @@
 <?php
-
+debug($this->request->data);
 $dataNasc = new DateTime($this->request->data['Lutador']['idade']);
 $currentTime = new DateTime();
 $conversaoParaIdade = $currentTime->diff($dataNasc);
@@ -21,6 +21,13 @@ $view .= $this->Html->tag('h2', 'Derrotas');
 $view .= $this->Html->para('', $this->request->data['Lutador']['derrotas']);
 $view .= $this->Html->tag('h2', 'Estilo de Luta');
 $view .= $this->Html->para('', $this->request->data['Lutador']['estilo_de_luta']);
+
+$view .= $this->Html->tag('h2', 'Histórico');
+foreach($this->request->data['Luta'] as $luta) {
+    $lutas = $luta['vencedor'] . ' - ' . date('d/m/Y', strtotime($luta['data_luta']));
+    $view .= $this->Html->para('', $lutas);
+}
+
 $linkVoltar = $this->Html->link('Voltar', '/lutadors');
 
 echo $this->Html->tag('h1', 'Visualizar Lutador');

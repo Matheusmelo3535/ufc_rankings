@@ -6,6 +6,10 @@ class Lutador extends AppModel {
     public $belongsTo = array(
         'Categoria'
     );
+    
+    public $hasAndBelongsToMany = array(
+        'Luta'
+    );
 
     public $validate = array(
         'nome' => array('rule' => 'notBlank', 'message' => 'Informe o nome'),
