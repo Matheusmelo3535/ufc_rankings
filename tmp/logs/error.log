@@ -889,3 +889,164 @@ Stack Trace:
 #10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest))
 #11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2021-08-03 20:14:23 Error: [MissingViewException] View file "Lutas\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Lutas\\index.ctp',
+)
+Request URL: /rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Lutas\\index')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-03 20:15:23 Error: [MissingViewException] View file "Lutas\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Lutas\\index.ctp',
+)
+Request URL: /rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Lutas\\index')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-03 20:15:24 Error: [MissingViewException] View file "Lutas\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Lutas\\index.ctp',
+)
+Request URL: /rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Lutas\\index')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-03 20:15:25 Error: [MissingViewException] View file "Lutas\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Lutas\\index.ctp',
+)
+Request URL: /rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Lutas\\index')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-03 20:15:30 Error: [MissingViewException] View file "Lutas\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Lutas\\index.ctp',
+)
+Request URL: /rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Lutas\\index')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-03 21:31:01 Error: [MissingActionException] Action LutasController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'LutasController',
+  'action' => 'add',
+)
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-08-03 21:32:35 Error: [Error] Call to a member function find() on null
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 [internal function]: LutasController->add()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-03 21:38:53 Error: [Error] Call to a member function find() on null
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 [internal function]: LutasController->add()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-03 21:39:10 Error: [Error] Call to a member function find() on null
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 [internal function]: LutasController->add()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-03 21:46:23 Error: [Error] Call to a member function find() on null
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 [internal function]: LutadorsController->add()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-03 21:52:20 Error: [MissingControllerException] Controller class LutaController could not be found.
+Exception Attributes: array (
+  'class' => 'LutaController',
+  'plugin' => NULL,
+)
+Request URL: /rankings/luta
+Stack Trace:
+#0 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-03 23:35:12 Error: [MissingControllerException] Controller class LutaController could not be found.
+Exception Attributes: array (
+  'class' => 'LutaController',
+  'plugin' => NULL,
+)
+Request URL: /rankings/luta
+Stack Trace:
+#0 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-03 23:51:44 Error: [MissingHelperException] Helper class LutadorHelper could not be found.
+Exception Attributes: array (
+  'class' => 'LutadorHelper',
+  'plugin' => false,
+)
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Lutador')
+#1 C:\xampp\cake\lib\Cake\View\View.php(858): HelperCollection->__isset('Lutador')
+#2 C:\xampp\apps\rankings\View\Lutas\add.ctp(3): View->__get('Lutador')
+#3 C:\xampp\cake\lib\Cake\View\View.php(971): include('C:\\xampp\\apps\\r...')
+#4 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#5 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#6 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#7 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#9 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2021-08-03 23:52:09 Error: [MissingHelperException] Helper class LutaHelper could not be found.
+Exception Attributes: array (
+  'class' => 'LutaHelper',
+  'plugin' => false,
+)
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Luta')
+#1 C:\xampp\cake\lib\Cake\View\View.php(858): HelperCollection->__isset('Luta')
+#2 C:\xampp\apps\rankings\View\Lutas\add.ctp(3): View->__get('Luta')
+#3 C:\xampp\cake\lib\Cake\View\View.php(971): include('C:\\xampp\\apps\\r...')
+#4 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#5 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#6 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#7 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#9 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

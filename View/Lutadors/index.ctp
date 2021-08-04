@@ -33,9 +33,4 @@ $addButton =  $this->Html->link('Novo Lutador', '/lutadors/add');
 echo $addButton;
 echo $this->Html->tag('table', $tableHeader . $tableBody);
 
-
-
-
-
-
 ?>

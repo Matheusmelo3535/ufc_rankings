@@ -1,5 +1,5 @@
 <?php
-debug($this->request->data);
+
 $dataNasc = new DateTime($this->request->data['Lutador']['idade']);
 $currentTime = new DateTime();
 $conversaoParaIdade = $currentTime->diff($dataNasc);

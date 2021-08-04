@@ -3,9 +3,21 @@
 App::uses('AppController', 'Controller');
 
 class LutadorsController extends AppController {
-        
+       
+    public $paginate = array(
+        'fields' => array(
+            'Lutador.id',
+            'Lutador.rank', 'Lutador.nome', 
+            'Lutador.altura', 'Lutador.peso', 
+            'Lutador.idade', 'Lutador.vitorias', 
+            'Lutador.derrotas', 'Lutador.estilo_de_luta'),
+        'conditions' => array(),
+        'limit' => 5,
+        'order' => array('Lutador.rank' => 'asc')
+    );
+    
     public function index() {
-        $lutadores = $this->Lutador->find('all');
+        $lutadores = $this->paginate();
         $this->set('lutadores', $lutadores);
     }
 
