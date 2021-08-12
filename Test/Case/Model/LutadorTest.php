@@ -13,6 +13,18 @@ class LutadorTest extends CakeTestCase {
         $lutador = ClassRegistry::init('Lutador');
         $this->assertTrue(is_a($this->Lutador, 'Lutador'));
     }
+    
+    public function testRankEmpty() {
+        $data = array('Lutador' => array('rank' => null));
+        $saved = $this->Lutador->save($data);
+        $this->assertFalse($saved);
+    }
+    
+    public function testRank3Caractere() {
+        $data = array('Lutador' => array('rank' => 100));
+        $saved = $this->Lutador->save($data);
+        $this->assertFalse($saved);
+    }
 
     public function testNomeEmpty() {
         $data = array('Lutador' => array('nome' => null));
