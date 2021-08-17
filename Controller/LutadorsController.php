@@ -3,8 +3,7 @@
 App::uses('AppController', 'Controller');
 
 class LutadorsController extends AppController {
-    public $layout = 'bootstrap';
-       
+    public $layout = 'bootstrap';    
     public $paginate = array(
         'fields' => array(
             'Lutador.id',
@@ -37,7 +36,6 @@ class LutadorsController extends AppController {
     
     public function edit($id = null) {
         if (!empty($this->request->data)) {
-            debug($this->request->data['Lutador']);
             if ($this->Lutador->saveAll($this->request->data)) {
                 $this->Flash->set('Lutador alterado com êxito.');
                 $this->redirect('/lutadors');

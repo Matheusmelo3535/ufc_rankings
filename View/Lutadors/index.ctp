@@ -26,11 +26,11 @@ foreach ($lutadores as $lutador) {
 echo $this->Html->tag('h1', 'Lutadores');
 
 $titulos = array('Rank','Nome', 'Altura', 'Peso', 'Idade', 'Vitorias', 'Derrotas', 'Estilo de Luta', '');
-$tableHeader = $this->Html->tableHeaders($titulos);
+$tableHeader = $this->Html->tag('thead',$this->Html->tableHeaders($titulos), array('class' => 'table-dark align-middle'));
 $tableBody = $this->Html->tableCells($lutadoresListFixed);
 $addButton =  $this->Html->link('Novo Lutador', '/lutadors/add');
 
 echo $addButton;
-echo $this->Html->tag('table', $tableHeader . $tableBody);
+echo $this->Html->tag('table', $tableHeader . $tableBody, array('class' => 'table align-middle'));
 
 ?>

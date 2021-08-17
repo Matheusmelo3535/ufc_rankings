@@ -6,7 +6,10 @@ class Lutador extends AppModel {
     public $hasAndBelongsToMany = array(
         'Categoria'
     );
-
+    // regex utilizada \pL - Matches anything in the Unicode letter category
+    // \pM - Combining marks (e.g. combining diacritics)
+    // \p{Zs} - White-space separators
+    // u - Pattern and subject strings are treated as UTF-8
     public $validate = array(
         'rank' => array(
             'rankNotEmpty' => array(
@@ -28,9 +31,13 @@ class Lutador extends AppModel {
                 'rule' => 'notBlank',
                 'message' => 'Informe o nome'
             ),
-            'nomeLengthAndString' => array(
-                'rule' => '/^[a-z]{6,}$/i',
-                'message' => 'O nome deve ter no minimo 6 caracteres e conter apenas letras'
+            'nomeRegexString' => array(
+                'rule' => '/^[\pL\pM\p{Zs}.-]+$/u',
+                'message' => 'O nome deve apenas letras'
+            ),
+            'nomeLength' => array(
+                'rule' => array('minLength', 6),
+                'message' => 'O nome deve possuir no minímo 6 caracteres'
             ),
         ),
         'altura' => array(

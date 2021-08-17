@@ -1,9 +1,13 @@
 <!doctype html>
 <html lang="pt">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>UFC | Rankings TOP 15</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="imagem/png" href="../assets/images/ufc_logo.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&family=Vollkorn&display=swap" rel="stylesheet">
+        <title>UFC Rankings | TOP 15</title>
         <?php 
             echo $this->Html->css('bootstrap.min.css');
             echo $this->Html->css('main.css');
