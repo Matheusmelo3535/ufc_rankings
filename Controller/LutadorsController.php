@@ -81,5 +81,4 @@ class LutadorsController extends AppController {
         $this->redirect('/lutadors');
     }
 }
-
 ?>
