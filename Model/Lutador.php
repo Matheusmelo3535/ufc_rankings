@@ -1,7 +1,6 @@
 <?php
 
 App::uses('AppModel', 'Model');
-
 class Lutador extends AppModel {
     public $hasAndBelongsToMany = array(
         'Categoria'
@@ -91,10 +90,14 @@ class Lutador extends AppModel {
             )
         ),
         'estilo_de_luta' => array(
-            'estiloIsStringAndLength' => array(
-                'rule' => '/^[a-z]{4,}$/i',
-                'message' => 'O estilo de luta deve possuir no minímo 4 caracteres e ser formado por letras'
+            'estiloLength' => array(
+                'rule' => array('minLength', '4'),
+                'message' => 'O estilo de luta deve possuir no minímo 4 caracteres'
             ),
+            'estiloIsString' => array(
+                'rule' => '/^[\pL\pM\p{Zs}.-]+$/u',
+                'message' => 'O estilo de luta deve conter apenas letras'
+            )
         )
     );
     
@@ -111,5 +114,4 @@ class Lutador extends AppModel {
         $dataDeNascimento = strtotime($check['idade']);
         return time() >= strtotime('+18 years', $dataDeNascimento);
     }
-    
 }

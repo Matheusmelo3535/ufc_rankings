@@ -13,13 +13,13 @@ foreach ($categorias as $categoria) {
     );
 }
 
-echo $this->Html->tag('h1', 'Categorias');
+echo $this->Html->tag('h1', 'Categorias', array('class' => 'text-center'));
 
 $titulos = array('Nome da Categoria', 'Peso máximo permitido','');
-$tableHeader = $this->Html->tableHeaders($titulos);
+$tableHeader = $this->Html->tag('thead',$this->Html->tableHeaders($titulos), array('class' => 'table-dark align-middle'));
 $tableBody = $this->Html->tableCells($categoriasListFixed);
-$addButton = $this->Html->link('Nova categoria', '/categorias/add');
+$addButton = $this->Html->link('Nova categoria', '/categorias/add', array('class' => 'btn btn-primary text-center mb-3'));
 
 echo $addButton;
-echo $this->Html->tag('table', $tableHeader . $tableBody);
+echo $this->Html->tag('table', $tableHeader . $tableBody, array('class' => 'table align-middle'));
 ?>

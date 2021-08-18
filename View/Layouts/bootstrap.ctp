@@ -18,7 +18,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2 shadow">
                 <div class="container">
                     <a class="navbar-brand" href="index.php">
-                        <img src="../assets/images/ufc_logo.png" alt="" class="d-inline-block align-text-top ufc-logo">
+                        <?php echo $this->Html->image('ufc_logo.png', array('class' => 'd-inline-block align-text-top ufc-logo')) ?>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -62,6 +62,11 @@
                 echo $this->fetch('content');
             ?>
         </main>
+        <footer class="text-center">
+            <div class="container p-3 d-flex justify-content-center align-items-center flex-column">
+                <span>© 2021 Copyright UFC. Todos os direitos reservados.</span>
+            </div>
+        </footer>
         <?php
             echo $this->Html->script('jquery-3.6.0.min.js');
             echo $this->Html->script('bootstrap.bundle.min.js');
