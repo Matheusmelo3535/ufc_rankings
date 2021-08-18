@@ -1,34 +1,68 @@
 <?php
 
 $form = $this->Form->create('Lutador');
-$form .= $this->Html->div('container',
-    $this->Html->div('row d-flex justify-content-center',
-            $this->Html->div('col-md-3 mb-3',
-             $this->Form->input('Lutador.nome', array('required' => false, 'class' => 'form-control borda-redonda'))
+$form .= $this->Html->div('container border border-5 m-5',
+    $this->Html->div('form-row d-flex justify-content-center',
+            $this->Html->div('form-group col-md-3 m-3',
+                $this->Form->input('Lutador.nome', array('required' => false, 'class' => 'form-control'))
             
-        ). $this->Html->div('col-md-3 mb-3',
-            $this->Form->input('Lutador.altura', array('required' => false, 'class' =>'form-control borda-redonda'))
+        ). $this->Html->div('form-group col-md-2 m-3',
+                $this->Form->input('Lutador.altura', array('required' => false, 'class' =>'form-control'))
 
-        ). $this->Html->div('col-md-3 mb-3',
-            $this->Form->input('Lutador.peso', array('required' => false, 'class' => 'form-control borda-redonda')))
+        ). $this->Html->div('form-group col-md-2 m-3',
+                $this->Form->input('Lutador.peso', array('required' => false, 'class' => 'form-control')))
     ).
-    $this->Html->div('row d-flex justify-content-center mb-4',
-        $this->Html->div('col-md-3 mb-3',
-         $this->Form->checkbox('Categoria.Categoria',
-         array('class' => 'form-check','options' => $categorias,'div' => false)))
-    ),
+    $this->Html->div('form-row d-flex justify-content-center mb-4',
+        $this->Html->div('form-group col-md-4 offset-md-2 m-3',
+            $this->Form->input('Categoria.Categoria',array(
+            'type' => 'select',
+            'multiple' => true,
+            'class' => 'form-control',
+            'label' => 'Categorias'
+         ))
+         
+        ). $this->Html->div('form-group col-md-2 offset-md-2 m-3',
+                $this->Form->input('Lutador.idade', array(
+                'type' => 'datetime-local',
+                'class' => 'form-control date',
+                'label' => 'Data de nascimento',
+                'dateFormat' => 'DMY',
+                'minYear' => date('Y') - 70
+            ))
+            
+        )
+    ).
+    $this->Html->div('form-row d-flex justify-content-center mb-4',
+        $this->Html->div('form-group col-md-1 m-3',
+            $this->Form->input('Lutador.vitorias', array(
+                'class' => 'form-control'
+            ))
+            
+        ). $this->Html->div('form-group col-md-1 m-3',
+                $this->Form->input('Lutador.derrotas', array(
+                    'class' => 'form-control'
+                ))
+                
+        ). $this->Html->div('form-group col-md-1 m-3',
+                $this->Form->input('Lutador.rank', array(
+                    'class' => 'form-control'
+                )))
+    ).
+    $this->Html->div('form-row d-flex justify-content-center mb-4',
+        $this->Html->div('form-group col-md-4 m3',
+            $this->Form->input('Lutador.estilo_de_luta', array(
+                'class' => 'form-control'
+            ))))
 );
 
-$form .= $this->Form->input('Lutador.idade', array(
-    'label' => 'Data de Nascimento',
-    'dateFormat' => 'DMY',
-    'minYear' => date('Y') - 70
-));
-$form .= $this->Form->input('Lutador.vitorias');
-$form .= $this->Form->input('Lutador.derrotas');
-$form .= $this->Form->input('Lutador.rank', array('required' => false));
-$form .= $this->Form->input('Lutador.estilo_de_luta');
-$form .= $this->Form->end('Gravar');
-echo $this->Html->tag('h1', 'Novo Lutador');
+$optionsFormEnd = array(
+    'label' => 'Gravar',
+    'class' => 'btn btn-primary',
+    'div' => array('class' => 'text-center')
+);
+$form .= $this->Form->end($optionsFormEnd);
+
+echo $this->Html->tag('h1', 'Novo Lutador', array('class' => 'mt-5 text-center'));
 echo $form;
+echo $this->Html->Link('Voltar', '/lutadors', array('class' => 'btn btn-secondary text-center'));
 ?>

@@ -23,12 +23,12 @@ foreach ($lutadores as $lutador) {
     );
 }
 
-echo $this->Html->tag('h1', 'Lutadores');
+echo $this->Html->tag('h1', 'TOP 15 do UFC', array('class' => 'text-center m-5'));
 
 $titulos = array('Rank','Nome', 'Altura', 'Peso', 'Idade', 'Vitorias', 'Derrotas', 'Estilo de Luta', '');
 $tableHeader = $this->Html->tag('thead',$this->Html->tableHeaders($titulos), array('class' => 'table-dark align-middle'));
 $tableBody = $this->Html->tableCells($lutadoresListFixed);
-$addButton =  $this->Html->link('Novo Lutador', '/lutadors/add');
+$addButton =  $this->Html->link('Novo Lutador', '/lutadors/add', array('class' => 'btn btn-primary text-center mb-5'));
 
 echo $addButton;
 echo $this->Html->tag('table', $tableHeader . $tableBody, array('class' => 'table align-middle'));
