@@ -1,8 +1,9 @@
 <?php
-// App::uses('AppTest', 'Test/Case/Model');
+App::uses('AppTest', 'Test/Case/Model');
 
-class LutadorTest extends CakeTestCase {
-
+class LutadorTest extends AppTest {
+    
+    public $modelName = 'Lutador';
     public $fixtures = array('app.lutador');
     public $Lutador = null;
 
@@ -13,110 +14,110 @@ class LutadorTest extends CakeTestCase {
     public function testExisteModel() {
         $lutador = ClassRegistry::init('Lutador');
         $this->assertTrue(is_a($this->Lutador, 'Lutador'));
+
     }
     
     public function testRankEmpty() {
-        $this->Lutador->validationErrors = null;
         $field = 'rank';
-        $content = -1;
-        $this->Lutador->set(array($field => $content));
-        // debug($this->Lutador->validates(array('fieldList' => array($field))));
-        // debug($this->assertEqualsInvalidField($field, $content));
-        debug($this);
-        exit();
+        $content = null;
+        $this->assertEqualsInvalidField($field, $content);
     }
     
-    // public function testRankPosicaoInexistente() {
-    //     $data = array('Lutador' => array('rank' => 100));
-    //     $saved = $this->Lutador->save($data);
-    //     $this->assertFalse($saved);
-    // }
+    public function testRankPosicaoInexistente() {
+        $field = 'rank';
+        $content = 16;
+        $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testCriarLutadorComRankRepetido() {
-    //     $data = array('Lutador' => array('rank' => 5));
-    //     $saved = $this->Lutador->save($data);
-    //     $this->assertFalse($saved);
-    // }
+    public function testCriarLutadorComRankRepetido() {
+        $field = 'rank';
+        $content = 5;
+        $this->assertEqualsInvalidField($field, $content);
+    }
     
+    public function testNomeEmpty() {
+        $field = 'nome';
+        $content = '';
+        $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testNomeEmpty() {
-    //     $data = array('Lutador' => array('nome' => null));
-    //     $saved = $this->Lutador->save($data); 
-    //     $this->assertFalse($saved);
-    // }
+    public function testNomeLength() {
+        $field = 'nome';
+        $content = 'Ben';
+        $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testNomeLength() {
-    //     $data = array('Lutador' => array('nome' => 'Matt'));
-    //     $saved = $this->Lutador->save($data); 
-    //     $this->assertFalse($saved);
-    // }
+    public function testNomeNaoAceitarNumerosNoNome() {
+        $field = 'nome';
+        $content = 312142425;
+        $this->assertEqualsInvalidField($field, $content);
+    }
 
-    // public function testAlturaEmpty() {
-    //     $data = array('Lutador' => array('altura' => null));
-    //     $saved = $this->Lutador->save($data); 
-    //     $this->assertFalse($saved);
-    // }
+    public function testAlturaEmpty() {
+        $field = 'altura';
+        $content = '';
+        $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testAlturaRangeValido() {
-    //     $data = array('Lutador' => array('altura' => 1.49));
-    //     $saved = $this->Lutador->save($data);
-    //     $this->assertFalse($saved);
-    // }
+    public function testAlturaRangeValido() {
+        $field = 'altura';
+        $content = 1.49;
+        $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testPesoEmpty() {
-    //     $data = array('Lutador' => array('peso' => null));
-    //     $saved = $this->Lutador->save($data);
-    //     $this->assertFalse($saved);
-    // }
+    public function testPesoEmpty() {
+        $field = 'peso';
+        $content = '';
+        $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testPesoRangeValido() {
-    //     $data = array('Lutador' => array('peso' => 56.6));
-    //     $saved = $this->Lutador->save($data);
-    //     $this->assertFalse($saved);
-    // }
+    public function testPesoRangeValido() {
+        $field = 'peso';
+        $content = 56.6;
+        $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testIdadeEmpty() {
-    //     $data = array('Lutador' => array('idade' => null));
-    //     $saved = $this->Lutador->save($data);
-    //     $this->assertFalse($saved);
-    // }
+    public function testIdadeEmpty() {
+       $field = 'idade';
+       $content = '';
+       $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testIdadeValida18AnosOuMais() {
-    //     $data = array('Lutador' => array('idade' => '2004-04-10'));
-    //     $saved = $this->Lutador->save($data);
-    //     $this->assertFalse($saved);
-    // }
+    public function testIdadeValida18AnosOuMais() {
+        $field = 'idade';
+        $content = '2004-04-10';
+        $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testVitoriasEmpty() {
-    //     $data = array('Lutador' => array('vitorias' => null));
-    //     $saved = $this->Lutador->save($data);
-    //     $this->assertFalse($saved);
-    // }
+    public function testVitoriasEmpty() {
+       $field = 'vitorias';
+       $content = '';
+       $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testVitoriasQtdValida() {
-    //     $data = array('Lutador' => array('vitorias' => 1));
-    //     $saved = $this->Lutador->save($data);
-    //     $this->assertFalse($saved);
-    // }
+    public function testVitoriasQtdValida() {
+        $field = 'vitorias';
+        $content = 9;
+        $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testDerrotasEmpty() {
-    //     $data = array('Lutador' => array('derrotas' => null));
-    //     $saved = $this->Lutador->save($data);
-    //     $this->assertFalse($saved);
-    // }
+    public function testDerrotasEmpty() {
+        $field = 'derrotas';
+        $content = '';
+        $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testDerrotasQtdValida() {
-    //     $data = array('Lutador' => array('derrotas' => -1));
-    //     $saved = $this->Lutador->save($data);
-    //     $this->assertFalse($saved);
-    // }
+    public function testDerrotasQtdValida() {
+        $field = 'derrotas';
+        $content = -1;
+        $this->assertEqualsInvalidField($field, $content);
+    }
     
-    // public function testEstiloDeLutaLengthValido() {
-    //     $data = array('Lutador' => array('estilo_de_luta' => 'abc'));
-    //     $saved = $this->Lutador->save($data);
-    //     $this->assertFalse($saved);
-    // }
-
+    public function testEstiloDeLutaLengthValido() {
+        $field = 'estilo_de_luta';
+        $content = 'aaa';
+        $this->assertEqualsInvalidField($field, $content);
+    }
 
     public function assertEqualsInvalidField($field, $content) {
         $this->{$this->modelName}->validationErrors = null;        
@@ -133,9 +134,8 @@ class LutadorTest extends CakeTestCase {
         } else {
             $invalidFieldName = $invalidFields;
         }
-
         $this->assertFalse($valid);
-        $this->assertEquals($field, $invalidFieldName);
+        $this->assertSame($field, $invalidFieldName);
     }
 }
 

@@ -32,7 +32,7 @@ class Lutador extends AppModel {
             ),
             'nomeRegexString' => array(
                 'rule' => '/^[\pL\pM\p{Zs}.-]+$/u',
-                'message' => 'O nome deve apenas letras'
+                'message' => 'O nome deve conter apenas letras'
             ),
             'nomeLength' => array(
                 'rule' => array('minLength', 6),
@@ -100,15 +100,6 @@ class Lutador extends AppModel {
             )
         )
     );
-    
-    public function checarRankDuplicado($check) {
-        $rankVago = true;
-        $checkIfRankExists = $this->find('count', array('conditions' => $check, 'recursive' => -1));
-        if ($checkIfRankExists) {
-            $rankVago = false;
-        }
-        return $rankVago;
-    }
     
     public function checarMaiorDeIdade($check) {
         $dataDeNascimento = strtotime($check['idade']);
