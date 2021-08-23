@@ -11,6 +11,7 @@
         <?php
             echo $this->Html->css('bootstrap.min.css');
             echo $this->Html->css('main.css');
+            echo $this->Html->css('bootstrap-datepicker.css');
         ?>
     </head>
     <body>
@@ -70,6 +71,9 @@
         <?php
             echo $this->Html->script('jquery-3.6.0.min.js');
             echo $this->Html->script('bootstrap.bundle.min.js');
+            echo $this->Html->script('bootstrap-datepicker.min.js');
+            echo $this->Html->script('bootstrap-datepicker.pt-BR.min.js');
+            echo $this->Html->script('datePickerConfigView.js');
             echo $this->Js->writeBuffer();
         ?>
     </body>

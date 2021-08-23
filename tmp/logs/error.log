@@ -4302,3 +4302,124 @@ Stack Trace:
 #3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest))
 #4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2021-08-23 13:47:16 Error: [MissingControllerException] Controller class AssetsController could not be found.
+Exception Attributes: array (
+  'class' => 'AssetsController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/assets/images/ufc_logo.png
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-23 14:38:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/css/bootstrap-datepicker.css
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-23 14:38:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/js/bootstrap-datepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-23 14:38:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/js/bootstrap-datepicker.pt-BR.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-23 14:39:09 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/css/bootstrap-datepicker.css
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-23 14:39:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/js/bootstrap-datepicker.pt-BR.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-23 14:39:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/js/bootstrap-datepicker.min.js
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-23 14:39:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/css/bootstrap-datepicker.css
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-23 14:43:49 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/js/datePickerConfigView.js
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-23 14:43:53 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/js/datePickerConfigView.js
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-23 14:44:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /ufc_rankings/js/datePickerConfigView.js
+Stack Trace:
+#0 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-08-23 14:59:22 Error: [MissingActionException] Action LutadorsController::assets() could not be found.
+Exception Attributes: array (
+  'controller' => 'LutadorsController',
+  'action' => 'assets',
+)
+Request URL: /ufc_rankings/lutadors/assets/images/ufc_logo.png
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-08-23 15:24:22 Error: [MissingActionException] Action LutadorsController::index.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LutadorsController',
+  'action' => 'index.php',
+)
+Request URL: /ufc_rankings/lutadors/index.php
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

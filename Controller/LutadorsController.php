@@ -24,6 +24,7 @@ class LutadorsController extends AppController {
     public function add() {
         if (!empty($this->request->data)) {
             $this->Lutador->create();
+            debug($this->request->data);
             if ($this->Lutador->saveAll($this->request->data)) {
                 $this->Flash->set('Lutador gravado com êxito.');
                 $this->redirect('/lutadors');

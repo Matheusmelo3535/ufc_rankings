@@ -105,4 +105,13 @@ class Lutador extends AppModel {
         $dataDeNascimento = strtotime($check['idade']);
         return time() >= strtotime('+18 years', $dataDeNascimento);
     }
+
+    public function beforeSave($options = array()) {
+        $continue = true;
+        if (!empty($this->data['Lutador']['idade'])) {
+            $data = str_replace('/', '-', $this->data['Lutador']['idade']);
+            $this->data['Lutador']['idade'] = date('Y-m-d', strtotime($data));
+        }
+        return $continue;
+    }
 }

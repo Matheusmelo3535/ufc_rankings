@@ -13,7 +13,7 @@ foreach ($categorias as $categoria) {
     );
 }
 
-echo $this->Html->tag('h1', 'Categorias', array('class' => 'text-center'));
+echo $this->Html->tag('h1', 'Categorias', array('class' => 'text-center m-3'));
 
 $titulos = array('Nome da Categoria', 'Peso máximo permitido','');
 $tableHeader = $this->Html->tag('thead',$this->Html->tableHeaders($titulos), array('class' => 'table-dark align-middle'));

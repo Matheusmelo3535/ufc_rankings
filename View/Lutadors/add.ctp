@@ -23,11 +23,10 @@ $form .= $this->Html->div('container border border-5 m-5',
          
         ). $this->Html->div('form-group col-md-2 offset-md-2 m-3',
                 $this->Form->input('Lutador.idade', array(
-                'type' => 'datetime-local',
-                'class' => 'form-control date',
+                'type' => 'text',
+                'class' => 'datepicker',
                 'label' => 'Data de nascimento',
                 'dateFormat' => 'DMY',
-                'minYear' => date('Y') - 70
             ))
             
         )

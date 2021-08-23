@@ -30,23 +30,17 @@ $tableHeader = $this->Html->tag('thead',$this->Html->tableHeaders($titulos), arr
 $tableBody = $this->Html->tableCells($lutadoresListFixed);
 $addButton =  $this->Html->link('Novo Lutador', '/lutadors/add', array('class' => 'btn btn-primary text-center mb-3'));
 
+$paginate = '';
+$paginate .= $this->Paginator->first();
+$paginate .= $this->Paginator->prev();
+$paginate .= $this->Paginator->next();
+$paginate .= $this->Paginator->last();
+$paginate = $this->Html->para('', $paginate);
+
+
+
 echo $addButton;
 echo $this->Html->tag('table', $tableHeader . $tableBody, array('class' => 'table align-middle'));
-$this->Paginator->options(array('update' => '#content'));
-$links = array(
-    $this->Paginator->first('Primeira', array('class' => 'page-link')),
-    $this->Paginator->prev('Anterior', array('class' => 'page-link')),
-    $this->Paginator->next('Próxima', array('class' => 'page-link')),
-    $this->Paginator->last('Última', array('class' => 'page-link'))
-);
-$paginate = $this->Html->nestedList($links, array('class' => 'pagination'), array('class' => 'page-item'));
-$paginate = $this->Html->tag('nav', $paginate);
-$paginateCount = $this->Paginator->counter(
-    '{:page} de {:pages}, mostrando {:current} registros de {:count}, começando em {:start} até {:end}'
-);
-echo $paginateBar = $this->Html->div('row', 
-    $this->Html->div('col-md-6', $paginate) . 
-    $this->Html->div('col-md-6', $paginateCount)
-);
+echo $paginate;
 
 ?>
