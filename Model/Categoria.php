@@ -25,7 +25,8 @@ class Categoria extends AppModel {
     );
     
     public function checkIfContainsWordPeso($check) {
-        return strpos($check['nome_categoria'], 'Peso');
+        $nomeCategoria = $check['nome_categoria'];
+        return stripos($nomeCategoria, 'Peso') !== false;
     }
 }
 

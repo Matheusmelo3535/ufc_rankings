@@ -46,6 +46,12 @@ class CategoriasController extends AppController {
             $this->request->data = $this->Categoria->find('first', compact('fields', 'conditions'));
         }
     }
+    
+    public function delete($id) {
+        $this->Categoria->delete($id);
+        $this->Flash->set('Categoria excluída com êxito');
+        $this->redirect('/categorias');
+    }
 
 }
 

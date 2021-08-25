@@ -11,6 +11,17 @@ class CategoriaTest extends AppTest {
         $this->Categoria = ClassRegistry::init('Categoria');
     }
     
+    public function testExisteModel() {
+        $categoria = ClassRegistry::init('Categoria');
+        $this->assertTrue(is_a($this->Categoria, 'Categoria'));
+    }
+    
+    public function testNomeCategoriaEmpty() {
+        $field = 'nome_categoria';
+        $content = '';
+        $this->assertEqualsInvalidField($field, $content);
+    }
+    
     
     
     
