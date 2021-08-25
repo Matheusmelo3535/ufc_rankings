@@ -26,7 +26,6 @@ $form .= $this->Html->div('container border border-5 m-5',
                 'type' => 'text',
                 'class' => 'datepicker',
                 'label' => 'Data de nascimento',
-                'dateFormat' => 'DMY',
             ))
             
         )

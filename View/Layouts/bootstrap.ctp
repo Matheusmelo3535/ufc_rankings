@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="imagem/png" href="../assets/images/ufc_logo.png">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&family=Vollkorn&display=swap" rel="stylesheet">
+        <?php
+            echo $this->Html->meta('ufc_logo.png','img/ufc_logo.png',array('type' => 'icon'));
+        ?>
         <title>UFC Rankings | TOP 15</title>
         <?php
             echo $this->Html->css('bootstrap.min.css');
-            echo $this->Html->css('main.css');
             echo $this->Html->css('bootstrap-datepicker.css');
+            echo $this->Html->css('main.css');
         ?>
     </head>
     <body>

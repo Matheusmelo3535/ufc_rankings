@@ -2,7 +2,7 @@
 
 $categoriasListFixed = array();
 foreach ($categorias as $categoria) {
-    $editLink = $this->Html->link('Editar', 'categorias/edit/' . $categoria['Categoria']['id']);
+    $editLink = $this->Html->link('Editar', '/categorias/edit/' . $categoria['Categoria']['id']);
     $deleteLink = $this->Html->link('Excluir', '/categorias/delete/' . $categoria['Categoria']['id']);
     $viewLink = $this->Html->link($categoria['Categoria']['nome_categoria'], '/categorias/view/' . $categoria['Categoria']['id']);
     
