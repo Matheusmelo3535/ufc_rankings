@@ -53,6 +53,15 @@ class CategoriasController extends AppController {
         $this->redirect('/categorias');
     }
 
+    public function view($id = null) {
+        $fields = array(
+            'Categoria.nome_categoria',
+            'Categoria.peso_permitido'
+        );
+        $conditions = array('Categoria.id' => $id);
+        $this->request->data = $this->Categoria->find('first', compact('fields', 'conditions'));
+    }
+
 }
 
 ?>

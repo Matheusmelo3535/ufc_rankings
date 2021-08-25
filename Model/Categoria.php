@@ -22,6 +22,16 @@ class Categoria extends AppModel {
                 'message' => 'O nome da categoria deve começar a palavra Peso'
             ),
         ),
+        'peso_permitido' => array(
+            'pesoRangeValidoDasCategorias' => array(
+                'rule' => array('range', 56.6, 120.3),
+                'message' => 'Peso limite inválido, informe um valor entre 56.7 - 120.2Kg'
+            ),
+            'pesoNotBlank' => array(
+                'rule' => 'notBlank',
+                'message' => 'Informe o limite de peso'
+            )
+        ),
     );
     
     public function checkIfContainsWordPeso($check) {

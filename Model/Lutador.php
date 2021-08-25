@@ -46,7 +46,7 @@ class Lutador extends AppModel {
             ),
             'alturaRangeValido' => array(
                 'rule' => array('range', 1.49, 2.21),
-                'message' => 'Altura inválida, informe um valor entre 1.50 ~ 2.20M'
+                'message' => 'Altura inválida, informe um valor entre 1.50 - 2.20M'
             ),
         ),
         'peso' => array(
@@ -56,7 +56,7 @@ class Lutador extends AppModel {
             ),
             'pesoRangeValido' => array(
                 'rule' => array('range', 56.6, 120.3),
-                'message' => 'Peso inválido, informe um valor entre 56.7 ~ 120.2Kg'
+                'message' => 'Peso inválido, informe um valor entre 56.7 - 120.2Kg'
             ),
         ),
         'idade' => array(
@@ -66,7 +66,7 @@ class Lutador extends AppModel {
             ),
             'idadeRangeValido' => array(
                 'rule' => 'checarMaiorDeIdade',
-                'message' => 'Idade inválida, informe uma idade entre 18 ~ 50 anos'
+                'message' => 'Idade inválida, informe uma idade entre 18 - 50 anos'
             ),
         ),
         'vitorias' => array(

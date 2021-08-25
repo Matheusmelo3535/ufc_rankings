@@ -5345,3 +5345,45 @@ Request URL: /rankings/luita
 Stack Trace:
 #0 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2021-08-25 14:08:23 Error: [ParseError] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+Request URL: /ufc_rankings/lutadors
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-08-25 14:25:47 Error: [ParseError] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /ufc_rankings/categorias/view/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest))
+#5 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-08-25 14:28:58 Error: [MissingViewException] View file "Categorias\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Categorias\\view.ctp',
+)
+Request URL: /ufc_rankings/categorias/view/1
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Categorias\\view')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-25 15:40:28 Error: [ParseError] syntax error, unexpected '=', expecting ')'
+Request URL: /ufc_rankings/lutadors
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
