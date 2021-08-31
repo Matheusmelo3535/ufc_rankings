@@ -19,7 +19,6 @@ class LutadorsController extends AppController {
     );
     
     public function index() {
-
         if ($this->request->is('post') && !empty($this->request->data['Lutador']['nome'])) {
             $this->paginate['conditions']['Lutador.nome LIKE'] = '%' . trim($this->request->data['Lutador']['nome']) . '%';
         }
