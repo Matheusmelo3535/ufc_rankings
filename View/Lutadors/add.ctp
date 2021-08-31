@@ -1,7 +1,7 @@
 <?php
 
 $form = $this->Form->create('Lutador');
-$form .= $this->Html->div('container border border-5 m-5',
+$form .= 
     $this->Html->div('form-row d-flex justify-content-center',
             $this->Html->div('form-group col-md-3 m-3',
                 $this->Form->input('Lutador.nome', array('required' => false, 'class' => 'form-control'))
@@ -50,8 +50,8 @@ $form .= $this->Html->div('container border border-5 m-5',
         $this->Html->div('form-group col-md-4 m3',
             $this->Form->input('Lutador.estilo_de_luta', array(
                 'class' => 'form-control'
-            ))))
-);
+            ))));
+
 
 $optionsFormEnd = array(
     'label' => 'Gravar',

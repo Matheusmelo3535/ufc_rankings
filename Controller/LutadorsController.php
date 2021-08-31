@@ -3,7 +3,9 @@
 App::uses('AppController', 'Controller');
 
 class LutadorsController extends AppController {
-    public $layout = 'bootstrap';    
+    public $layout = 'bootstrap';
+    public $helpers = array('Js' => array('Jquery'));
+    public $components = array('RequestHandler');
     public $paginate = array(
         'fields' => array(
             'Lutador.id',

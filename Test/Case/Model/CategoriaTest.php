@@ -44,5 +44,11 @@ class CategoriaTest extends AppTest {
         $field = 'peso_permitido';
         $content = '';
         $this->assertEqualsInvalidField($field, $content);
-    }    
+    }
+    
+    public function testPesoNoRangeValido() {
+        $field = 'peso_permitido';
+        $content = 55.5;
+        $this->assertEqualsInvalidField($field, $content);
+    }
 }

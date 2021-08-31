@@ -79,5 +79,19 @@
             echo $this->Html->script('datePickerConfigView.js');
             echo $this->Js->writeBuffer();
         ?>
+        <!-- <script>
+                $(document).ready(function () {
+                    $('#link-18').on('click', function (event) {
+                        event.preventDefault();
+                        $.ajax({
+                            type: 'get',
+                            url: '/rankings/lutadors/view/18',
+                            success: function(content) {
+                                $('#content').html(content);
+                            }
+                        });
+                    });
+                });
+            </script> -->
     </body>
 </html>

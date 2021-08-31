@@ -26,3 +26,4 @@ $optionsFormEnd = array(
 );
 $form .= $this->Form->end($optionsFormEnd);
 echo $form;
+echo $this->Html->Link('Voltar', '/categorias', array('class' => 'btn btn-secondary text-center'));
