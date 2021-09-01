@@ -62,5 +62,9 @@ $form .= $this->Form->end($optionsFormEnd);
 
 echo $this->Html->tag('h1', 'Novo Lutador', array('class' => 'mt-5 text-center'));
 echo $form;
-echo $this->Html->Link('Voltar', '/lutadors', array('class' => 'btn btn-secondary text-center'));
+echo $this->Js->Link('Voltar', '/lutadors', array('class' => 'btn btn-secondary text-center', 'update' => '#content'));
+
+if ($this->request->is('ajax')) {
+    echo $this->Js->writeBuffer();
+}
 ?>

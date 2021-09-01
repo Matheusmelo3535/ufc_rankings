@@ -27,4 +27,9 @@ $optionsFormEnd = array(
 );
 $form .= $this->Form->end($optionsFormEnd);
 echo $form;
-echo $this->Html->Link('Voltar', '/categorias', array('class' => 'btn btn-secondary text-center'));
+echo $this->Html->Link('Voltar', '/categorias', array('class' => 'btn btn-secondary text-center','content' => 'update'));
+
+if ($this->request->is('ajax')) {
+    echo $this->Js->writeBuffer();
+}
+?>

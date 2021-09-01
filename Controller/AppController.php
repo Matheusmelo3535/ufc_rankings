@@ -46,6 +46,7 @@ class AppController extends Controller {
                     'passwordHasher' => array('className' => 'Simple', 'hashType' => 'sha256')
                 )
             ),
+            'authorize' => array('Crud' => array('userModel' => 'Usuario'))
         ),
     );
 }

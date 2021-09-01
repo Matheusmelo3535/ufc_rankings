@@ -28,11 +28,13 @@ foreach ($this->request->data['Categoria'] as $categoria) {
     $view .= $this->Html->para('', $categorias);
 }
 
-$linkVoltar = $this->Html->link('Voltar', '/lutadors');
+$linkVoltar = $this->Js->link('Voltar', '/lutadors', array('update' => '#content'));
 
 echo $this->Html->tag('h1', 'Visualizar Lutador');
 echo $view;
 echo $linkVoltar;
 
-
+if ($this->request->is('ajax')) {
+    echo $this->Js->writeBuffer();
+}
 ?>

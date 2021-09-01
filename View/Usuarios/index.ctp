@@ -47,7 +47,8 @@ $paginateBar = $this->Html->div('row',
     $this->Html->div('col-md-6', $paginate) . 
     $this->Html->div('col-md-6', $paginateCount)
 );
-
+echo $this->Flash->render('warning'); 
+echo $this->Flash->render('success'); 
 echo $addButton;
 echo $filtro;
 echo $this->Html->tag('table', $tableHeader . $tableBody, array('class' => 'table align-middle'));

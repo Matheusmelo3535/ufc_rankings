@@ -16,6 +16,11 @@ class UsuariosController extends AppController {
         'limite' => 5,
         'order' => array('Usuario.nome' => 'asc')
     );
+
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow('logout');
+    }
     
     public function login() {
         $this->layout = 'login';

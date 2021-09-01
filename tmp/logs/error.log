@@ -5567,3 +5567,69 @@ Request URL: /rankings/logout
 Stack Trace:
 #0 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2021-09-01 14:21:40 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Usuario
+    [Aro0.foreign_key] => 3
+)
+"
+Request URL: /ufc_rankings/lutadors
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Permission.php(80): AclNode->node(Array)
+#1 C:\xampp\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'Lutadors', 'read')
+#2 C:\xampp\cake\lib\Cake\Controller\Component\AclComponent.php(110): DbAcl->check(Array, 'Lutadors', 'read')
+#3 C:\xampp\cake\lib\Cake\Controller\Component\Auth\CrudAuthorize.php(97): AclComponent->check(Array, 'Lutadors', 'read')
+#4 C:\xampp\cake\lib\Cake\Controller\Component\AuthComponent.php(470): CrudAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\cake\lib\Cake\Controller\Component\AuthComponent.php(311): AuthComponent->isAuthorized(Array)
+#6 C:\xampp\cake\lib\Cake\Utility\ObjectCollection.php(129): AuthComponent->startup(Object(LutadorsController))
+#7 C:\xampp\cake\lib\Cake\Event\CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(683): CakeEventManager->dispatch(Object(CakeEvent))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-01 15:02:47 Error: [Error] Call to a member function bootstrap() on null
+Request URL: /ufc_rankings/login
+Stack Trace:
+#0 [internal function]: UsuariosController->login()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-01 15:03:14 Error: [Error] Call to a member function bootstrap() on null
+Request URL: /ufc_rankings/login
+Stack Trace:
+#0 [internal function]: UsuariosController->login()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-01 15:04:12 Error: [Error] Call to a member function bootstrap() on null
+Request URL: /ufc_rankings/login
+Stack Trace:
+#0 [internal function]: UsuariosController->login()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-01 16:02:18 Error: [Error] Call to a member function bootstrap() on null
+Request URL: /ufc_rankings/login
+Stack Trace:
+#0 [internal function]: UsuariosController->login()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-01 16:02:24 Error: [Error] Call to a member function bootstrap() on null
+Request URL: /ufc_rankings/login
+Stack Trace:
+#0 [internal function]: UsuariosController->login()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

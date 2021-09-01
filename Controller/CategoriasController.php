@@ -4,6 +4,7 @@ App::uses('AppController', 'Controller');
 
 class CategoriasController extends AppController {
     public $layout = 'bootstrap';
+    public $helpers = array('Js' => array('Jquery'));
     public $paginate = array(
         'fields' => array(
             'Categoria.id',
@@ -16,6 +17,9 @@ class CategoriasController extends AppController {
     );
 
     public function index() {
+        if ($this->request->is('post') && !empty($this->request->data['Categoria']['nome_categoria'])) {
+            $this->paginate['conditions']['Categoria.nome_categoria LIKE'] = '%' . trim($this->request->data['Categoria']['nome_categoria']) . '%';
+        }
         $categorias = $this->paginate();
         $this->set('categorias', $categorias);
     }
