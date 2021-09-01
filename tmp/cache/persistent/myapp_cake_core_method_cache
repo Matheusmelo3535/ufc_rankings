@@ -1,2 +1,2 @@
-1630434105
-a:3:{i:0;b:0;s:4:"name";a:7:{s:32:"6f8e96bae56fa752a31c9b3b14bad592";s:14:"`ufc_rankings`";s:32:"f8ca9f0a5ad8f946bfef53b59a4e276f";s:10:"`usuarios`";s:32:"b7ba2701c6807faf5eee4f1afd90689f";s:14:"`Usuario`.`id`";s:32:"a24b323e4c7032e571ee78ba6cde1db7";s:16:"`Usuario`.`nome`";s:32:"3dc862cd7a6ea00b3e7fe64245e613a9";s:17:"`Usuario`.`login`";s:32:"7e4d566a6f56448d7e24d1debb31ebcd";s:17:"`Usuario`.`senha`";s:32:"bdff66b6db806558355d8822383bee1c";s:9:"`Usuario`";}s:6:"fields";a:1:{s:32:"21d23c90c51700e567a927172be727db";a:4:{i:0;s:14:"`Usuario`.`id`";i:1;s:16:"`Usuario`.`nome`";i:2;s:17:"`Usuario`.`login`";i:3;s:17:"`Usuario`.`senha`";}}}
+1630491018
+a:2:{i:0;b:0;s:4:"name";a:2:{s:32:"6f8e96bae56fa752a31c9b3b14bad592";s:14:"`ufc_rankings`";s:32:"f8ca9f0a5ad8f946bfef53b59a4e276f";s:10:"`usuarios`";}}

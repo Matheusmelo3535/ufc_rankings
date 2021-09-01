@@ -5387,3 +5387,183 @@ Stack Trace:
 #4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
 #5 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #6 {main}
+2021-08-31 20:48:46 Error: [MissingTableException] Table usuarios for model Usuario was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'usuarios',
+  'class' => 'Usuario',
+  'ds' => 'default',
+)
+Request URL: /rankings/usuarios
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Model.php(3673): Model->setSource('usuarios')
+#1 C:\xampp\cake\lib\Cake\Model\Model.php(1394): Model->getDataSource()
+#2 C:\xampp\cake\lib\Cake\Model\Model.php(1490): Model->schema()
+#3 C:\xampp\cake\lib\Cake\Controller\Component\PaginatorComponent.php(421): Model->hasField('nome')
+#4 C:\xampp\cake\lib\Cake\Controller\Component\PaginatorComponent.php(158): PaginatorComponent->validateSort(Object(Usuario), Array, Array)
+#5 C:\xampp\cake\lib\Cake\Controller\Controller.php(1107): PaginatorComponent->paginate(Object(Usuario), Array, Array)
+#6 C:\xampp\apps\rankings\Controller\UsuariosController.php(25): Controller->paginate()
+#7 [internal function]: UsuariosController->index()
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-08-31 21:08:52 Error: [MissingViewException] View file "Usuarios\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\add.ctp',
+)
+Request URL: /rankings/usuarios/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\add')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-31 21:08:55 Error: [MissingViewException] View file "Usuarios\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\add.ctp',
+)
+Request URL: /rankings/usuarios/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\add')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-31 21:08:57 Error: [MissingViewException] View file "Usuarios\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\add.ctp',
+)
+Request URL: /rankings/usuarios/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\add')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-31 21:09:00 Error: [MissingViewException] View file "Usuarios\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\add.ctp',
+)
+Request URL: /rankings/usuarios/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\add')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-31 21:09:00 Error: [MissingViewException] View file "Usuarios\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\add.ctp',
+)
+Request URL: /rankings/usuarios/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\add')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-31 21:09:01 Error: [MissingViewException] View file "Usuarios\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\add.ctp',
+)
+Request URL: /rankings/usuarios/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\add')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-31 21:09:01 Error: [MissingViewException] View file "Usuarios\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\add.ctp',
+)
+Request URL: /rankings/usuarios/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\add')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-31 21:09:01 Error: [MissingViewException] View file "Usuarios\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\add.ctp',
+)
+Request URL: /rankings/usuarios/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\add')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-31 21:09:01 Error: [MissingViewException] View file "Usuarios\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\add.ctp',
+)
+Request URL: /rankings/usuarios/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\add')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-31 21:09:01 Error: [MissingViewException] View file "Usuarios\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\add.ctp',
+)
+Request URL: /rankings/usuarios/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\add')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-31 22:57:34 Error: [MissingViewException] View file "Usuarios\login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\login.ctp',
+)
+Request URL: /rankings/login
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\login')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-31 23:27:02 Error: [Error] Call to a member function login() on null
+Request URL: /rankings/login
+Stack Trace:
+#0 [internal function]: UsuariosController->login()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-08-31 23:55:58 Error: [MissingControllerException] Controller class IusuController could not be found.
+Exception Attributes: array (
+  'class' => 'IusuController',
+  'plugin' => NULL,
+)
+Request URL: /rankings/iusu
+Stack Trace:
+#0 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-09-01 00:28:37 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /rankings/logout
+Stack Trace:
+#0 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
