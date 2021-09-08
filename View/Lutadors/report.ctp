@@ -19,6 +19,7 @@ $settings = array(
         'body' => array(
             array('line' => array(
                 'border' => 1,
+                'alternateFill' => '190',
                 array('cell' => array('fieldName' => 'Lutador.nome')),
                 array('cell' => array('fieldName' => 'Lutador.rank', 'lineWidth' => '15')),
                 array('cell' => array('fieldName' => 'Categoria.0.nome_categoria', 'lineWidth' => '35')),

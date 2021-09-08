@@ -83,4 +83,10 @@ class UsuariosController extends AppController {
         $conditions = array('Usuario.id' => $id);
         $this->request->data = $this->Usuario->find('first', compact('fields', 'conditions'));
     }
+
+    public function delete($id) {
+        $this->Usuario->delete($id);
+        $this->Flash->bootstrap('Usuario excluído com êxito', array('key' => 'success'));
+        $this->redirect('/usuarios');
+    }
 }

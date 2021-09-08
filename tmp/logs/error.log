@@ -6455,3 +6455,373 @@ Stack Trace:
 #10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
 #11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2021-09-08 13:09:09 Error: [Exception] FPDF error: Some data has already been output, can't send PDF file
+Request URL: /ufc_rankings/lutadors/report
+Stack Trace:
+#0 C:\xampp\apps\ufc_rankings\Plugin\Pdf\Vendor\make-pdf\lib\fpdf\fpdf.php(1061): Pdf\MakePdf\FPDF->Error('Some data has a...')
+#1 C:\xampp\apps\ufc_rankings\Plugin\Pdf\Vendor\make-pdf\lib\fpdf\fpdf.php(1000): Pdf\MakePdf\FPDF->_checkoutput()
+#2 C:\xampp\apps\ufc_rankings\Plugin\Pdf\Vendor\make-pdf\lib\PdfDocument.php(327): Pdf\MakePdf\FPDF->Output('I', 'document_202109...', false)
+#3 C:\xampp\apps\ufc_rankings\Plugin\Pdf\Vendor\make-pdf\lib\PdfReport.php(28): Pdf\MakePdf\PdfDocument->Output()
+#4 C:\xampp\apps\ufc_rankings\Plugin\Pdf\View\Helper\ReportHelper.php(14): Pdf\MakePdf\PdfReport->create(Array)
+#5 C:\xampp\apps\ufc_rankings\View\Lutadors\report.ctp(44): ReportHelper->create(Array)
+#6 C:\xampp\cake\lib\Cake\View\View.php(971): include('C:\\xampp\\apps\\u...')
+#7 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#8 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#9 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2021-09-08 13:09:15 Error: [Exception] FPDF error: Some data has already been output, can't send PDF file
+Request URL: /ufc_rankings/lutadors/report
+Stack Trace:
+#0 C:\xampp\apps\ufc_rankings\Plugin\Pdf\Vendor\make-pdf\lib\fpdf\fpdf.php(1061): Pdf\MakePdf\FPDF->Error('Some data has a...')
+#1 C:\xampp\apps\ufc_rankings\Plugin\Pdf\Vendor\make-pdf\lib\fpdf\fpdf.php(1000): Pdf\MakePdf\FPDF->_checkoutput()
+#2 C:\xampp\apps\ufc_rankings\Plugin\Pdf\Vendor\make-pdf\lib\PdfDocument.php(327): Pdf\MakePdf\FPDF->Output('I', 'document_202109...', false)
+#3 C:\xampp\apps\ufc_rankings\Plugin\Pdf\Vendor\make-pdf\lib\PdfReport.php(28): Pdf\MakePdf\PdfDocument->Output()
+#4 C:\xampp\apps\ufc_rankings\Plugin\Pdf\View\Helper\ReportHelper.php(14): Pdf\MakePdf\PdfReport->create(Array)
+#5 C:\xampp\apps\ufc_rankings\View\Lutadors\report.ctp(44): ReportHelper->create(Array)
+#6 C:\xampp\cake\lib\Cake\View\View.php(971): include('C:\\xampp\\apps\\u...')
+#7 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#8 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#9 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2021-09-08 13:09:42 Error: [Exception] FPDF error: Some data has already been output, can't send PDF file
+Request URL: /ufc_rankings/lutadors/report
+Stack Trace:
+#0 C:\xampp\apps\ufc_rankings\Plugin\Pdf\Vendor\make-pdf\lib\fpdf\fpdf.php(1061): Pdf\MakePdf\FPDF->Error('Some data has a...')
+#1 C:\xampp\apps\ufc_rankings\Plugin\Pdf\Vendor\make-pdf\lib\fpdf\fpdf.php(1000): Pdf\MakePdf\FPDF->_checkoutput()
+#2 C:\xampp\apps\ufc_rankings\Plugin\Pdf\Vendor\make-pdf\lib\PdfDocument.php(327): Pdf\MakePdf\FPDF->Output('I', 'document_202109...', false)
+#3 C:\xampp\apps\ufc_rankings\Plugin\Pdf\Vendor\make-pdf\lib\PdfReport.php(28): Pdf\MakePdf\PdfDocument->Output()
+#4 C:\xampp\apps\ufc_rankings\Plugin\Pdf\View\Helper\ReportHelper.php(14): Pdf\MakePdf\PdfReport->create(Array)
+#5 C:\xampp\apps\ufc_rankings\View\Lutadors\report.ctp(44): ReportHelper->create(Array)
+#6 C:\xampp\cake\lib\Cake\View\View.php(971): include('C:\\xampp\\apps\\u...')
+#7 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#8 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#9 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2021-09-08 13:16:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(8): Model->find('all')
+#7 [internal function]: LutasController->index()
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#11 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 13:17:33 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(8): Model->find('all')
+#7 [internal function]: LutasController->index()
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#11 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 13:19:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(8): Model->find('all')
+#7 [internal function]: LutasController->index()
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#11 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 13:20:58 Error: [Error] Call to a member function find() on null
+Request URL: /ufc_rankings/lutas/add
+Stack Trace:
+#0 [internal function]: LutasController->add()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-08 13:22:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(8): Model->find('all')
+#7 [internal function]: LutasController->index()
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#11 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 13:42:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\cake\lib\Cake\Controller\Component\PaginatorComponent.php(212): Model->find('all', Array)
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(1107): PaginatorComponent->paginate(Object(Luta), Array, Array)
+#8 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(21): Controller->paginate()
+#9 [internal function]: LutasController->index()
+#10 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#13 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-09-08 13:45:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\cake\lib\Cake\Controller\Component\PaginatorComponent.php(212): Model->find('all', Array)
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(1107): PaginatorComponent->paginate(Object(Luta), Array, Array)
+#8 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(21): Controller->paginate()
+#9 [internal function]: LutasController->index()
+#10 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#13 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-09-08 14:12:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.lutador_vencedor' in 'field list'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\cake\lib\Cake\Controller\Component\PaginatorComponent.php(212): Model->find('all', Array)
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(1107): PaginatorComponent->paginate(Object(Luta), Array, Array)
+#8 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(21): Controller->paginate()
+#9 [internal function]: LutasController->index()
+#10 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#13 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-09-08 14:13:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\cake\lib\Cake\Controller\Component\PaginatorComponent.php(212): Model->find('all', Array)
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(1107): PaginatorComponent->paginate(Object(Luta), Array, Array)
+#8 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(21): Controller->paginate()
+#9 [internal function]: LutasController->index()
+#10 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#13 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-09-08 14:14:05 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\cake\lib\Cake\Controller\Component\PaginatorComponent.php(212): Model->find('all', Array)
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(1107): PaginatorComponent->paginate(Object(Luta), Array, Array)
+#8 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(23): Controller->paginate()
+#9 [internal function]: LutasController->index()
+#10 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#13 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-09-08 14:15:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\cake\lib\Cake\Controller\Component\PaginatorComponent.php(212): Model->find('all', Array)
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(1107): PaginatorComponent->paginate(Object(Luta), Array, Array)
+#8 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(21): Controller->paginate()
+#9 [internal function]: LutasController->index()
+#10 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#13 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-09-08 14:15:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\cake\lib\Cake\Controller\Component\PaginatorComponent.php(212): Model->find('all', Array)
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(1107): PaginatorComponent->paginate(Object(Luta), Array, Array)
+#8 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(21): Controller->paginate()
+#9 [internal function]: LutasController->index()
+#10 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#13 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-09-08 14:15:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\cake\lib\Cake\Controller\Component\PaginatorComponent.php(212): Model->find('all', Array)
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(1107): PaginatorComponent->paginate(Object(Luta), Array, Array)
+#8 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(21): Controller->paginate()
+#9 [internal function]: LutasController->index()
+#10 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#13 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-09-08 14:18:39 Error: [Error] Call to undefined method View::asign()
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(971): include()
+#1 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2021-09-08 14:19:30 Error: [Error] Call to undefined method View::asign()
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(971): include()
+#1 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2021-09-08 14:19:47 Error: [Error] Call to undefined method View::asign()
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(971): include()
+#1 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2021-09-08 14:19:48 Error: [Error] Call to undefined method View::asign()
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(971): include()
+#1 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2021-09-08 14:20:09 Error: [Error] Call to undefined method View::asign()
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(971): include()
+#1 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2021-09-08 14:21:18 Error: [Error] Call to undefined method View::asign()
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(971): include()
+#1 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\u...', Array)
+#2 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\u...')
+#3 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#5 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#6 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2021-09-08 15:48:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'field list'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\cake\lib\Cake\Controller\Component\PaginatorComponent.php(212): Model->find('all', Array)
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(1107): PaginatorComponent->paginate(Object(Luta), Array, Array)
+#8 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(22): Controller->paginate()
+#9 [internal function]: LutasController->index()
+#10 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#13 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2021-09-08 15:52:20 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /ufc_rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\cake\lib\Cake\Controller\Component\PaginatorComponent.php(212): Model->find('all', Array)
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(1107): PaginatorComponent->paginate(Object(Luta), Array, Array)
+#8 C:\xampp\apps\ufc_rankings\Controller\LutasController.php(23): Controller->paginate()
+#9 [internal function]: LutasController->index()
+#10 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#13 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}

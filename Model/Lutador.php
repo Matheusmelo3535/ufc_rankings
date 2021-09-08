@@ -5,6 +5,8 @@ class Lutador extends AppModel {
     public $hasAndBelongsToMany = array(
         'Categoria'
     );
+
+    
     // regex utilizada \pL - Matches anything in the Unicode letter category
     // \pM - Combining marks (e.g. combining diacritics)
     // \p{Zs} - White-space separators
@@ -68,10 +70,10 @@ class Lutador extends AppModel {
                 'rule' => 'checarMaiorDeIdade',
                 'message' => 'Idade inválida, informe uma idade entre 18 - 50 anos'
             ),
-            // 'idadeIsADate' => array(
-            //     'rule' => 'date',
-            //     'message' => 'Informe uma data válida'
-            // )
+            'idadeIsADate' => array(
+                'rule' => array('date', 'dmy'),
+                'message' => 'Informe uma data válida'
+            )
         ),
         'vitorias' => array(
             'vitoriasNotBlank' => array(
