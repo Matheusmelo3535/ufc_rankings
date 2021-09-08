@@ -54,16 +54,6 @@ echo $filtro;
 echo $this->Html->tag('table', $tableHeader . $tableBody, array('class' => 'table align-middle'));
 echo $paginateBar;
 
-
-
-
-
-
-
-
-
-
-
 if ($this->request->is('ajax')) {
     echo $this->Js->writeBuffer();
 }

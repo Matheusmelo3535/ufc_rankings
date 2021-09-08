@@ -1,7 +1,8 @@
 <?php
+$this->extend('/Common/form');
+$this->assign('titulo', 'Nova Categoria de Peso');
 
-$form = $this->Form->create('Categoria');
-$form .= $this->Html->div(
+$formFields .= $this->Html->div(
     'container my-3 justify-content-center',
     $this->Html->div(
         'row d-flex justify-content-center',
@@ -19,16 +20,5 @@ $form .= $this->Html->div(
     )
 );
 
-$optionsFormEnd = array(
-    'label' => 'Gravar',
-    'class' => 'btn btn-primary',
-    'div' => array('class' => 'text-center')
-);
-$form .= $this->Form->end($optionsFormEnd);
-echo $form;
-echo $this->Js->Link('Voltar', '/categorias', array('class' => 'btn btn-secondary text-center', 'update' => '#content'));
-
-if ($this->request->is('ajax')) {
-    echo $this->Js->writeBuffer();
-}
+$this->assign('formFields', $formFields);
 ?>

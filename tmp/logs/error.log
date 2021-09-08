@@ -5633,3 +5633,825 @@ Stack Trace:
 #3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
 #4 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2021-09-06 14:43:07 Error: [MissingPluginException] Plugin Pdf could not be found.
+Exception Attributes: array (
+  'plugin' => 'Pdf',
+)
+Request URL: /rankings/
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Core\App.php(227): CakePlugin::path('Pdf')
+#1 C:\xampp\cake\lib\Cake\Core\App.php(549): App::path('View/Helper', 'Pdf')
+#2 [internal function]: App::load('ReportHelper')
+#3 [internal function]: spl_autoload_call('ReportHelper')
+#4 C:\xampp\cake\lib\Cake\View\HelperCollection.php(130): class_exists('ReportHelper')
+#5 C:\xampp\cake\lib\Cake\View\View.php(907): HelperCollection->load('Pdf.Report', Array)
+#6 C:\xampp\cake\lib\Cake\View\View.php(354): View->loadHelpers()
+#7 C:\xampp\cake\lib\Cake\Controller\Controller.php(1268): View->__construct(Object(LutadorsController))
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(954): Controller->_getViewObject()
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-06 14:45:30 Error: [MissingActionException] Action UsuariosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'view',
+)
+Request URL: /rankings/usuarios/view/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-06 14:45:32 Error: [MissingActionException] Action UsuariosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'view',
+)
+Request URL: /rankings/usuarios/view/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-06 14:45:34 Error: [MissingActionException] Action UsuariosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'view',
+)
+Request URL: /rankings/usuarios/view/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-06 14:45:34 Error: [MissingActionException] Action UsuariosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'view',
+)
+Request URL: /rankings/usuarios/view/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-06 14:45:35 Error: [MissingActionException] Action UsuariosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'view',
+)
+Request URL: /rankings/usuarios/view/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-06 14:45:36 Error: [MissingActionException] Action UsuariosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'view',
+)
+Request URL: /rankings/usuarios/view/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-06 14:45:36 Error: [MissingActionException] Action UsuariosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'view',
+)
+Request URL: /rankings/usuarios/view/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-06 14:45:36 Error: [MissingActionException] Action UsuariosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'view',
+)
+Request URL: /rankings/usuarios/view/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-06 14:45:47 Error: [MissingActionException] Action UsuariosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'view',
+)
+Request URL: /rankings/usuarios/view/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-06 14:45:47 Error: [MissingActionException] Action UsuariosController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'view',
+)
+Request URL: /rankings/usuarios/view/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-06 14:45:48 Error: [MissingActionException] Action UsuariosController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'edit',
+)
+Request URL: /rankings/usuarios/edit/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-06 14:45:50 Error: [MissingActionException] Action UsuariosController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'delete',
+)
+Request URL: /rankings/usuarios/delete/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-06 15:34:09 Error: [Error] Call to a member function bootstrap() on null
+Request URL: /rankings/usuarios/add
+Stack Trace:
+#0 [internal function]: UsuariosController->add()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-06 15:42:03 Error: [CakeException] AclNode::node() - Couldn't find Aro node identified by "Array
+(
+    [Aro0.model] => Usuario
+    [Aro0.foreign_key] => 13
+)
+"
+Request URL: /rankings/usuarios
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Permission.php(80): AclNode->node(Array)
+#1 C:\xampp\cake\lib\Cake\Controller\Component\Acl\DbAcl.php(73): Permission->check(Array, 'Usuarios', 'read')
+#2 C:\xampp\cake\lib\Cake\Controller\Component\AclComponent.php(110): DbAcl->check(Array, 'Usuarios', 'read')
+#3 C:\xampp\cake\lib\Cake\Controller\Component\Auth\CrudAuthorize.php(97): AclComponent->check(Array, 'Usuarios', 'read')
+#4 C:\xampp\cake\lib\Cake\Controller\Component\AuthComponent.php(470): CrudAuthorize->authorize(Array, Object(CakeRequest))
+#5 C:\xampp\cake\lib\Cake\Controller\Component\AuthComponent.php(311): AuthComponent->isAuthorized(Array)
+#6 C:\xampp\cake\lib\Cake\Utility\ObjectCollection.php(129): AuthComponent->startup(Object(UsuariosController))
+#7 C:\xampp\cake\lib\Cake\Event\CakeEventManager.php(243): ObjectCollection->trigger('startup')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(683): CakeEventManager->dispatch(Object(CakeEvent))
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(189): Controller->startupProcess()
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-06 15:46:18 Error: [Error] Call to a member function bootstrap() on null
+Request URL: /rankings/login
+Stack Trace:
+#0 [internal function]: UsuariosController->login()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-06 15:48:39 Error: [Error] Call to a member function bootstrap() on null
+Request URL: /rankings/login
+Stack Trace:
+#0 [internal function]: UsuariosController->login()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(UsuariosController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-06 16:42:32 Error: [MissingActionException] Action LutadorsController::index.php() could not be found.
+Exception Attributes: array (
+  'controller' => 'LutadorsController',
+  'action' => 'index.php',
+)
+Request URL: /rankings/lutadors/index.php
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-07 12:49:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Categoria.nome_categoria' in 'field list'
+Request URL: /rankings/lutadors/report
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Lutador...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Lutador...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Lutador...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Lutador), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(106): Model->find('all', Array)
+#7 [internal function]: LutadorsController->report()
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-07 12:55:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Categoria.categoria' in 'field list'
+Request URL: /rankings/lutadors/report
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Lutador...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Lutador...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Lutador...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Lutador), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(106): Model->find('all', Array)
+#7 [internal function]: LutadorsController->report()
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-07 13:37:26 Error: [Exception] FPDF error: Some data has already been output, can't send PDF file
+Request URL: /rankings/lutadors/report
+Stack Trace:
+#0 C:\xampp\apps\rankings\Plugin\Pdf\Vendor\make-pdf\lib\fpdf\fpdf.php(1061): Pdf\MakePdf\FPDF->Error('Some data has a...')
+#1 C:\xampp\apps\rankings\Plugin\Pdf\Vendor\make-pdf\lib\fpdf\fpdf.php(1000): Pdf\MakePdf\FPDF->_checkoutput()
+#2 C:\xampp\apps\rankings\Plugin\Pdf\Vendor\make-pdf\lib\PdfDocument.php(327): Pdf\MakePdf\FPDF->Output('I', 'document_202109...', false)
+#3 C:\xampp\apps\rankings\Plugin\Pdf\Vendor\make-pdf\lib\PdfReport.php(28): Pdf\MakePdf\PdfDocument->Output()
+#4 C:\xampp\apps\rankings\Plugin\Pdf\View\Helper\ReportHelper.php(14): Pdf\MakePdf\PdfReport->create(Array)
+#5 C:\xampp\apps\rankings\View\Lutadors\report.ctp(19): ReportHelper->create(Array)
+#6 C:\xampp\cake\lib\Cake\View\View.php(971): include('C:\\xampp\\apps\\r...')
+#7 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#8 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#9 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#12 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2021-09-07 18:50:42 Error: [MissingActionException] Action UsuariosController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'edit',
+)
+Request URL: /rankings/usuarios/edit/13
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-07 18:50:42 Error: [MissingActionException] Action UsuariosController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'edit',
+)
+Request URL: /rankings/usuarios/edit/13
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-07 18:50:42 Error: [MissingActionException] Action UsuariosController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'edit',
+)
+Request URL: /rankings/usuarios/edit/13
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-07 18:50:43 Error: [MissingActionException] Action UsuariosController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'edit',
+)
+Request URL: /rankings/usuarios/edit/13
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-07 18:50:43 Error: [MissingActionException] Action UsuariosController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'edit',
+)
+Request URL: /rankings/usuarios/edit/13
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-07 19:22:32 Error: [MissingActionException] Action UsuariosController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'delete',
+)
+Request URL: /rankings/usuarios/delete/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#2 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2021-09-07 19:22:34 Error: [MissingViewException] View file "Usuarios\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\view.ctp',
+)
+Request URL: /rankings/usuarios/view/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\view')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-07 20:24:51 Error: [ParseError] syntax error, unexpected '').datepicker({' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-09-07 20:24:52 Error: [ParseError] syntax error, unexpected '').datepicker({' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-09-07 20:24:58 Error: [ParseError] syntax error, unexpected '').datepicker({' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-09-07 20:24:59 Error: [ParseError] syntax error, unexpected '').datepicker({' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-09-07 20:24:59 Error: [ParseError] syntax error, unexpected '').datepicker({' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-09-07 20:24:59 Error: [ParseError] syntax error, unexpected '').datepicker({' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-09-07 20:24:59 Error: [ParseError] syntax error, unexpected '').datepicker({' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-09-07 20:24:59 Error: [ParseError] syntax error, unexpected '').datepicker({' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-09-07 20:24:59 Error: [ParseError] syntax error, unexpected '').datepicker({' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-09-07 20:24:59 Error: [ParseError] syntax error, unexpected '').datepicker({' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-09-07 20:25:01 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /rankings/add
+Stack Trace:
+#0 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2021-09-07 20:25:13 Error: [ParseError] syntax error, unexpected '').datepicker({' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-09-07 20:25:24 Error: [ParseError] syntax error, unexpected '').datepicker({' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#1 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#4 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#5 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2021-09-07 20:34:08 Error: [Error] Call to undefined function exti()
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 [internal function]: LutadorsController->add()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-07 20:36:20 Error: [Error] Call to undefined function typeof()
+Request URL: /rankings/lutadors/add
+Stack Trace:
+#0 [internal function]: LutadorsController->add()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-07 21:30:54 Error: [MissingViewException] View file "Usuarios\view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Usuarios\\view.ctp',
+)
+Request URL: /rankings/usuarios/view/12
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\View.php(470): View->_getViewFileName('Usuarios\\view')
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-07 23:32:57 Error: [ArgumentCountError] Too few arguments to function View::fetch(), 0 passed in C:\xampp\apps\rankings\View\Common\index.ctp on line 20 and at least 1 expected
+Request URL: /rankings/
+Stack Trace:
+#0 C:\xampp\apps\rankings\View\Common\index.ctp(20): View->fetch()
+#1 C:\xampp\cake\lib\Cake\View\View.php(971): include('C:\\xampp\\apps\\r...')
+#2 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#3 C:\xampp\cake\lib\Cake\View\View.php(945): View->_render('C:\\xampp\\apps\\r...')
+#4 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#5 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#6 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#7 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#8 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2021-09-08 01:32:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'where clause'
+Request URL: /rankings/lutadors/view/18
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Categor...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Categor...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('list', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(87): Model->find('list', Array)
+#7 [internal function]: LutadorsController->view('18')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 01:32:30 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'where clause'
+Request URL: /rankings/lutadors/view/18
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Categor...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Categor...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('list', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(87): Model->find('list', Array)
+#7 [internal function]: LutadorsController->view('18')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 01:32:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'where clause'
+Request URL: /rankings/lutadors/view/18
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Categor...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Categor...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('list', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(87): Model->find('list', Array)
+#7 [internal function]: LutadorsController->view('18')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 01:32:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'where clause'
+Request URL: /rankings/lutadors/view/18
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Categor...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Categor...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('list', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(87): Model->find('list', Array)
+#7 [internal function]: LutadorsController->view('18')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 01:32:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'where clause'
+Request URL: /rankings/lutadors/view/18
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Categor...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Categor...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('list', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(87): Model->find('list', Array)
+#7 [internal function]: LutadorsController->view('18')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 01:32:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'where clause'
+Request URL: /rankings/lutadors/view/19
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Categor...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Categor...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('list', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(87): Model->find('list', Array)
+#7 [internal function]: LutadorsController->view('19')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 01:32:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'where clause'
+Request URL: /rankings/lutadors/view/19
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Categor...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Categor...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('list', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(87): Model->find('list', Array)
+#7 [internal function]: LutadorsController->view('19')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 01:32:36 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'where clause'
+Request URL: /rankings/lutadors/view/19
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Categor...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Categor...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('list', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(87): Model->find('list', Array)
+#7 [internal function]: LutadorsController->view('19')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 01:37:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'field list'
+Request URL: /rankings/lutadors/view/18
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Lutador...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Lutador...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Lutador...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('list', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(91): Model->find('list', Array)
+#7 [internal function]: LutadorsController->view('18')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 01:37:16 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'field list'
+Request URL: /rankings/lutadors/view/18
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Lutador...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Lutador...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Lutador...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('list', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(91): Model->find('list', Array)
+#7 [internal function]: LutadorsController->view('18')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 01:37:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'field list'
+Request URL: /rankings/lutadors/view/18
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Lutador...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Lutador...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Lutador...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('list', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(91): Model->find('list', Array)
+#7 [internal function]: LutadorsController->view('18')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 01:37:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Lutador.id' in 'field list'
+Request URL: /rankings/lutadors/view/18
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Lutador...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Lutador...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Lutador...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Categoria), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('list', Array)
+#6 C:\xampp\apps\rankings\Controller\LutadorsController.php(91): Model->find('list', Array)
+#7 [internal function]: LutadorsController->view('18')
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2021-09-08 07:40:28 Error: [MissingHelperException] Helper class ReportHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ReportHelper',
+  'plugin' => false,
+)
+Request URL: /rankings/categorias/report
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Report')
+#1 C:\xampp\cake\lib\Cake\View\View.php(858): HelperCollection->__isset('Report')
+#2 C:\xampp\apps\rankings\View\Categorias\report.ctp(36): View->__get('Report')
+#3 C:\xampp\cake\lib\Cake\View\View.php(971): include('C:\\xampp\\apps\\r...')
+#4 C:\xampp\cake\lib\Cake\View\View.php(933): View->_evaluate('C:\\xampp\\apps\\r...', Array)
+#5 C:\xampp\cake\lib\Cake\View\View.php(473): View->_render('C:\\xampp\\apps\\r...')
+#6 C:\xampp\cake\lib\Cake\Controller\Controller.php(968): View->render(NULL, NULL)
+#7 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#8 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriasController), Object(CakeRequest))
+#9 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2021-09-08 12:11:29 Error: [Error] Call to a member function find() on null
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 [internal function]: LutasController->add()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-08 12:12:13 Error: [Error] Call to a member function find() on null
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 [internal function]: LutasController->add()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-08 12:12:15 Error: [Error] Call to a member function find() on null
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 [internal function]: LutasController->add()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-08 12:12:46 Error: [Error] Call to a member function find() on null
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 [internal function]: LutasController->add()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2021-09-08 12:22:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Luta), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1754): Model->_doSave(Array, Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(2515): Model->save(Array, Array)
+#6 C:\xampp\cake\lib\Cake\Model\Model.php(2287): Model->saveAssociated(Array, Array)
+#7 C:\xampp\apps\rankings\Controller\LutasController.php(15): Model->saveAll(Array)
+#8 [internal function]: LutasController->add()
+#9 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#12 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2021-09-08 12:40:54 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Luta), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1754): Model->_doSave(Array, Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(2515): Model->save(Array, Array)
+#6 C:\xampp\cake\lib\Cake\Model\Model.php(2287): Model->saveAssociated(Array, Array)
+#7 C:\xampp\apps\rankings\Controller\LutasController.php(15): Model->saveAll(Array)
+#8 [internal function]: LutasController->add()
+#9 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#12 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2021-09-08 12:46:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /rankings/lutas/add
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('INSERT INTO `uf...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1132): DboSource->execute('INSERT INTO `uf...')
+#3 C:\xampp\cake\lib\Cake\Model\Model.php(1942): DboSource->create(Object(Luta), Array, Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(1754): Model->_doSave(Array, Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(2515): Model->save(Array, Array)
+#6 C:\xampp\cake\lib\Cake\Model\Model.php(2287): Model->saveAssociated(Array, Array)
+#7 C:\xampp\apps\rankings\Controller\LutasController.php(15): Model->saveAll(Array)
+#8 [internal function]: LutasController->add()
+#9 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#12 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2021-09-08 12:46:55 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Luta.lutador_id' in 'on clause'
+Request URL: /rankings/lutas
+Stack Trace:
+#0 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(502): PDOStatement->execute(Array)
+#1 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(468): DboSource->_execute('SELECT `Luta`.`...', Array)
+#2 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(715): DboSource->execute('SELECT `Luta`.`...', Array, Array)
+#3 C:\xampp\cake\lib\Cake\Model\Datasource\DboSource.php(1226): DboSource->fetchAll('SELECT `Luta`.`...', Array)
+#4 C:\xampp\cake\lib\Cake\Model\Model.php(3040): DboSource->read(Object(Luta), Array)
+#5 C:\xampp\cake\lib\Cake\Model\Model.php(3012): Model->_readDataSource('all', Array)
+#6 C:\xampp\apps\rankings\Controller\LutasController.php(8): Model->find('all')
+#7 [internal function]: LutasController->index()
+#8 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutasController), Array)
+#9 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
+#11 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

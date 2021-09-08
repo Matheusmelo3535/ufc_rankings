@@ -31,7 +31,9 @@ App::uses('Controller', 'Controller');
  * @link		https://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+    public $helpers = array('Js' => array('Jquery'));
     public $components = array(
+        'Flash',
         'RequestHandler',
         'Auth' => array(
             'flash' => array('element' => 'bootstrap', 'params' => array('key' => 'warning'), 'key' => 'warning'),
@@ -48,5 +50,6 @@ class AppController extends Controller {
             ),
             'authorize' => array('Crud' => array('userModel' => 'Usuario'))
         ),
+        'Acl'
     );
 }

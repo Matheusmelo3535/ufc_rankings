@@ -1,7 +1,9 @@
 <?php
+$this->extend('/Common/form');
 
-$form = $this->Form->create('Lutador');
-$form .= 
+$this->assign('titulo', 'Alterar Lutador');
+
+$formFields .= 
     $this->Html->div('row d-flex justify-content-center',
             $this->Html->div('form-group col-md-3 m-3',
                 $this->Form->input('Lutador.nome', array('required' => false, 'class' => 'form-control'))
@@ -51,20 +53,12 @@ $form .=
         $this->Html->div('form-group col-md-4 m3',
             $this->Form->input('Lutador.estilo_de_luta', array(
                 'class' => 'form-control'
-            ))));
+))));
 
-
-$optionsFormEnd = array(
-    'label' => 'Gravar',
-    'class' => 'btn btn-primary',
-    'div' => array('class' => 'text-center')
+$this->assign('formFields', $formFields);
+$this->Js->buffer('$(".datepicker").datepicker({
+    format: "dd/mm/yyyy",
+    language: "pt-BR"
+    })'
 );
-$form .= $this->Form->end($optionsFormEnd);
-echo $this->Html->tag('h1', 'Editar Lutador', array('class' => 'mt-5 text-center'));
-echo $form;
-echo $this->Js->Link('Voltar', '/lutadors', array('class' => 'btn btn-secondary text-center', 'update' => '#content'));
-
-if ($this->request->is('ajax')) {
-    echo $this->Js->writeBuffer();
-}
 ?>

@@ -1,18 +1,39 @@
 <?php
 
-$view = $this->Html->div('container text-center');
-$view .= $this->Html->tag('h2', 'Nome da Categoria');
-$view .= $this->Html->para('', $this->request->data['Categoria']['nome_categoria']);
-$view .= $this->Html->tag('h2', 'Limite de peso');
-$view .= $this->Html->para('', $this->request->data['Categoria']['peso_permitido']);
+$this->extend('/Common/form');
 
-$linkVoltar = $this->Js->link('Voltar', '/categorias', array('update' => '#content'));
+$this->assign('titulo', 'Visualizar Categoria de Peso');
 
-echo $this->Html->tag('h1', 'Visualizar Categoria', array('class' => 'm-4 text-center'));
-echo $view;
-echo $linkVoltar;
+$formFields .= $this->Html->div(
+    'container my-3 justify-content-center',
+    $this->Html->div(
+        'row d-flex justify-content-center',
+        $this->Html->div(
+                'form-group col-md-3 m-3',
+                $this->Form->input('Categoria.nome_categoria', array(
+                    'required' => false, 
+                    'class' => 'form-control', 
+                    'label' => 'Nome da Categoria', 
+                    'disabled' => true
+                    )
+                )
+            )
+    ).
+    $this->Html->div(
+        'row d-flex justify-content-center',
+        $this->Html->div(
+                'form-group col-md-3 m-3',
+                $this->Form->input('Categoria.peso_permitido', array(
+                    'required' => false, 
+                    'class' => 'form-control', 
+                    'label' => 'Limite de peso da Categoria',
+                    'disabled' => true
+                    )
+                )
+            ) . 
+            $this->Form->input('Categoria.id', array('type' => 'hidden'))
+    )
+);
 
-if ($this->request->is('ajax')) {
-    echo $this->Js->writeBuffer();
-}
+$this->assign('formFields', $formFields);
 ?>

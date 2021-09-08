@@ -18,7 +18,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2 shadow">
                 <div class="container">
-                    <a class="navbar-brand" href="index.php">
+                    <a class="navbar-brand" href="/rankings/lutadors">
                         <?php echo $this->Html->image('ufc_logo.png', array('class' => 'd-inline-block align-text-top ufc-logo')) ?>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
                 </div>
             </nav>
         </header>
-        <main role="main" class="container" id="content"> 
+        <main role="main" class="container d-flex justify-content-center align-items-center h-100" id="content"> 
             <?php
                 echo $this->Flash->render();
                 echo $this->fetch('content');

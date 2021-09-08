@@ -68,6 +68,10 @@ class Lutador extends AppModel {
                 'rule' => 'checarMaiorDeIdade',
                 'message' => 'Idade inválida, informe uma idade entre 18 - 50 anos'
             ),
+            // 'idadeIsADate' => array(
+            //     'rule' => 'date',
+            //     'message' => 'Informe uma data válida'
+            // )
         ),
         'vitorias' => array(
             'vitoriasNotBlank' => array(

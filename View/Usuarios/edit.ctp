@@ -5,6 +5,8 @@ $form .=
     $this->Html->div('form-row d-flex justify-content-center align-items-center mt-4',
         $this->Html->div('form-group col-md-3 m-1',
             $this->Form->input('Usuario.nome', array('required' => false, 'class' => 'form-control'))
+            . 
+            $this->Form->input('Usuario.id', array('type' => 'hidden'))
         )
     ) .
     
@@ -27,11 +29,9 @@ $form .=
 );
 $form .= $this->Form->end();
 echo $form;
-echo $this->Js->Link('Voltar', '/usuarios', array('class' => 'btn btn-secondary text-center', 'update' => '#content'));
 if ($this->request->is('ajax')) {
     echo $this->Js->writeBuffer();
 }
-
 
 
 

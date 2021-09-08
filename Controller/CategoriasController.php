@@ -4,7 +4,7 @@ App::uses('AppController', 'Controller');
 
 class CategoriasController extends AppController {
     public $layout = 'bootstrap';
-    public $helpers = array('Js' => array('Jquery'));
+    public $helpers = array('Js' => array('Jquery'), 'Pdf.report');
     public $paginate = array(
         'fields' => array(
             'Categoria.id',
@@ -15,6 +15,10 @@ class CategoriasController extends AppController {
         'limit' => 5,
         'order' => array('Categoria.peso_permitidos' => 'asc')
     );
+    
+    public function beforeFilter() {
+        $this->Auth->mapActions(['read' => ['report']]);
+    }
 
     public function index() {
         if ($this->request->is('post') && !empty($this->request->data['Categoria']['nome_categoria'])) {
@@ -66,7 +70,16 @@ class CategoriasController extends AppController {
         $conditions = array('Categoria.id' => $id);
         $this->request->data = $this->Categoria->find('first', compact('fields', 'conditions'));
     }
-
+    
+    public function report() {
+        $this->layout = false;
+        $this->response->type('pdf');
+        $fields = array(
+            'Categoria.nome_categoria',
+            'Categoria.peso_permitido'
+        );
+        $categorias = $this->Categoria->find('all', compact('fields'));
+        $this->set('categorias', $categorias);
+    }
 }
-
 ?>
