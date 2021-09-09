@@ -2,6 +2,7 @@
 $this->extend('/Common/form');
 $this->assign('titulo', 'Nova Categoria de Peso');
 
+$formFields = $this->element('formCreate');
 $formFields .= $this->Html->div(
     'container my-3 justify-content-center',
     $this->Html->div(

@@ -2,8 +2,8 @@
 
 $controllerName = $this->request->params['controller'];
 $actionName = $this->request->params['action'];
-$form = $this->Form->create(false);
-$form .= $this->fetch('formFields');
+
+$form = $this->fetch('formFields');
 if ($actionName != 'view') {
     $form .= $this->Js->submit('Gravar', array('class' => 'btn btn-success m-3', 'div' => false, 'update' => '#content'));
 }

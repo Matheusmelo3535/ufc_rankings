@@ -3,6 +3,7 @@
 $this->extend('/Common/form');
 
 $this->assign('titulo', 'Novo Lutador');
+$formFields = $this->element('formCreate');
 $formFields .=
 $this->Html->div('form-row d-flex justify-content-center',
         $this->Html->div('form-group col-md-3 m-3',
@@ -16,7 +17,7 @@ $this->Html->div('form-row d-flex justify-content-center',
             $this->Form->input('Lutador.peso', array('required' => false, 'class' => 'form-control')))
 ).
 $this->Html->div('form-row d-flex justify-content-center mb-4',
-    $this->Html->div('form-group col-md-4 offset-md-2 m-3',
+    $this->Html->div('form-group col-md-2 offset-md-2 m-3',
         $this->Form->input('Categoria.Categoria',array(
         'type' => 'select',
         'multiple' => true,
