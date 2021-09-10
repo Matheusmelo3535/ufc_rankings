@@ -3,8 +3,7 @@
 App::uses('AppController', 'Controller');
 
 class LutasController extends AppController {
-    public $layout = 'bootstrap';
-    public $helpers = array('Js' => array('Jquery'), 'Pdf.report');
+   
     public $paginate = array(
         'fields' => array(
             'Luta.id',

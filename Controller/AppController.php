@@ -31,7 +31,8 @@ App::uses('Controller', 'Controller');
  * @link		https://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-    public $helpers = array('Js' => array('Jquery'));
+    public $layout = 'bootstrap';
+    public $helpers = array('Js' => array('Jquery'), 'Pdf.report');
     public $components = array(
         'Flash',
         'RequestHandler',
@@ -52,4 +53,18 @@ class AppController extends Controller {
         ),
         'Acl'
     );
+
+    public function beforeFilter() {
+        $this->Auth->mapActions(['read' => ['report']]);
+    }
+
+    public function index() {
+        $this->setPaginateConditions();
+        $this->set($this->getControllerName(), $this->paginate());
+
+    }
+
+    public function getControllerName() {
+        return $this->request->params['controller'];
+    }
 }

@@ -3,8 +3,7 @@
 App::uses('AppController', 'Controller');
 
 class LutadorsController extends AppController {
-    public $layout = 'bootstrap';
-    public $helpers = array('Js' => array('Jquery'), 'Pdf.report');
+    
     public $paginate = array(
         'fields' => array(
             'Lutador.id',
@@ -17,16 +16,11 @@ class LutadorsController extends AppController {
         'order' => array('Lutador.rank' => 'asc')
     );
     
-    public function beforeFilter() {
-        $this->Auth->mapActions(['read' => ['report']]);
-    }
-    
-    public function index() {
+    public function setPaginateConditions() {
         if ($this->request->is('post') && !empty($this->request->data['Lutador']['nome'])) {
             $this->paginate['conditions']['Lutador.nome LIKE'] = '%' . trim($this->request->data['Lutador']['nome']) . '%';
         }
-        $lutadores = $this->paginate();
-        $this->set('lutadores', $lutadores);
+
     }
 
     public function add() {

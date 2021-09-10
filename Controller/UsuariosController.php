@@ -3,8 +3,7 @@
 App::uses('AppController', 'Controller');
 
 class UsuariosController extends AppController {
-    public $layout = 'bootstrap';
-    public $helpers = array('Js' => array('Jquery'));
+    
     public $paginate = array(
         'fields' => array(
             'Usuario.id',
