@@ -40,7 +40,7 @@ $settings = array(
             ))
         ),
     ),
-    'records' => $lutadores
+    'records' => $lutadors
 );
 echo $this->Report->create($settings);
 ?>

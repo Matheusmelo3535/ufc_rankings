@@ -9,7 +9,6 @@ class UsuariosController extends AppController {
             'Usuario.id',
             'Usuario.nome',
             'Usuario.login',
-            'Usuario.senha'
         ),
         'conditions' => array(),
         'limite' => 5,
@@ -37,7 +36,15 @@ class UsuariosController extends AppController {
     }
 
     public function setPaginateConditions() {
-        if ($this->request->is('post') && !empty($this->request->data['Usuario']['nome'])) {
+        $nome = '';
+        if ($this->request->is('post')) {
+            $nome = $this->request->data['Usuario']['nome'];
+            $this->Session->write('Usuario.nome', $nome);
+        } else {
+            $nome = $this->Session->read('Usuario.nome');
+            $this->request->data('Usuario.nome', $nome);
+        }
+        if (!empty($nome)) {
             $this->paginate['conditions']['Usuario.nome LIKE'] = '%' . trim($this->request->data['Usuario']['nome']) . '%';
         }
     }

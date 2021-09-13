@@ -17,7 +17,15 @@ class LutadorsController extends AppController {
     );
     
     public function setPaginateConditions() {
-        if ($this->request->is('post') && !empty($this->request->data['Lutador']['nome'])) {
+        $nome = '';
+        if ($this->request->is('post')) {
+            $nome = $this->request->data['Lutador']['nome'];
+            $this->Session->write('Lutador.nome', $nome);
+        } else {
+            $nome = $this->Session->read('Lutador.nome');
+            $this->request->data('Lutador.nome', $nome);
+        }
+        if (!empty($nome)) {
             $this->paginate['conditions']['Lutador.nome LIKE'] = '%' . trim($this->request->data['Lutador']['nome']) . '%';
         }
     }
@@ -45,44 +53,10 @@ class LutadorsController extends AppController {
             return $lutador;
     }
 
-    public function view($id = null) {
-        $fields = array(
-            'Lutador.id',
-            'Lutador.nome', 
-            'Lutador.altura', 
-            'Lutador.peso', 
-            'Lutador.idade', 
-            'Lutador.vitorias', 
-            'Lutador.derrotas', 
-            'Lutador.rank',
-            'Lutador.estilo_de_luta');
-            $conditions = array('Lutador.id' => $id);
-            $this->request->data = $this->Lutador->find('first', compact('fields', 'conditions'));
-            $this->setCategorias();
-    }
+    // public function view($id = null) {
+    //    parent::view($id);
+    // }
 
-    public function delete($id) {
-        $this->Lutador->delete($id);
-        $this->Flash->set('Lutador excluído com êxito.');
-        $this->redirect('/lutadors');
-    }
-    
-    public function report() {
-        $this->layout = false;
-        $this->response->type('pdf');
-        $fields = array(
-            'Lutador.id',
-            'Lutador.nome', 
-            'Lutador.vitorias', 
-            'Lutador.derrotas', 
-            'Lutador.rank',
-            'Lutador.estilo_de_luta',
-        );
-        $lutadores = $this->Lutador->find('all', compact('fields'));
-        $this->set('lutadores', $lutadores);
-        
-    }
-    
     public function setCategorias() {
         $fields = array('Categoria.id', 'Categoria.nome_categoria');
         $categorias = $this->Lutador->Categoria->find('list', compact('fields'));

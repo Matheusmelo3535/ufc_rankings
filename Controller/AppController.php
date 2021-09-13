@@ -36,6 +36,7 @@ class AppController extends Controller {
     public $components = array(
         'Flash',
         'RequestHandler',
+        'Session',
         'Auth' => array(
             'flash' => array('element' => 'bootstrap', 'params' => array('key' => 'warning'), 'key' => 'warning'),
             'authError' => 'Você não possui permissão para acessar essa operação.',
@@ -86,6 +87,22 @@ class AppController extends Controller {
         } else {
             $this->request->data = $this->getEditData($id);
         }
+    }
+
+    public function view($id = null) {
+        $this->request->data = $this->getEditData($id);
+    }
+
+    public function delete($id) {
+        $this->{$this->getModelName()}->delete($id);
+        $this->Flash->bootstrap('Exclusão realizada com êxito!', array('key' => 'success'));
+        $this->redirect('/' . $this->getControllerName());
+    }
+
+    public function report() {
+        $this->layout = false;
+        $this->response->type('pdf');
+        $this->set($this->getControllerName(), $this->paginate());
     }
 
     public function getControllerName() {
