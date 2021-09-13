@@ -36,22 +36,19 @@ class UsuariosController extends AppController {
         $this->redirect('/login');
     }
 
-    public function index() {
+    public function setPaginateConditions() {
         if ($this->request->is('post') && !empty($this->request->data['Usuario']['nome'])) {
             $this->paginate['conditions']['Usuario.nome LIKE'] = '%' . trim($this->request->data['Usuario']['nome']) . '%';
         }
-        $usuarios = $this->paginate();
-        $this->set('usuarios', $usuarios);
     }
     
     public function add() {
-        if (!empty($this->request->data)) {
-            $this->Usuario->create();
-            if ($this->Usuario->save($this->request->data)) {
-                $this->Flash->bootstrap('Usuario gravado com sucesso', array('key' => 'success'));
-                $this->redirect('/usuarios');
-            }
-        }
+        parent::add();
+        $aros = $this->Acl->Aro->find('list', [
+           'conditions' => ['Aro.parent_id IS NULL'],
+           'fields' => ['Aro.id', 'Aro.alias'] 
+        ]);
+        $this->set('aros', $aros);
     }
     
     public function edit($id = null) {

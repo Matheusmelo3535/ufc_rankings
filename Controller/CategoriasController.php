@@ -19,22 +19,14 @@ class CategoriasController extends AppController {
         $this->Auth->mapActions(['read' => ['report']]);
     }
 
-    public function index() {
+    public function setPaginateConditions() {
         if ($this->request->is('post') && !empty($this->request->data['Categoria']['nome_categoria'])) {
             $this->paginate['conditions']['Categoria.nome_categoria LIKE'] = '%' . trim($this->request->data['Categoria']['nome_categoria']) . '%';
         }
-        $categorias = $this->paginate();
-        $this->set('categorias', $categorias);
     }
 
     public function add() {
-        if (!empty($this->request->data)) {
-            $this->Categoria->create();
-            if ($this->Categoria->save($this->request->data)) {
-                $this->Flash->set('Categoria gravada com êxito');
-                $this->redirect('/categorias');
-            }
-        }
+        parent::add();
     }
     
     public function edit($id = null) {

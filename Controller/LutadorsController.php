@@ -20,31 +20,16 @@ class LutadorsController extends AppController {
         if ($this->request->is('post') && !empty($this->request->data['Lutador']['nome'])) {
             $this->paginate['conditions']['Lutador.nome LIKE'] = '%' . trim($this->request->data['Lutador']['nome']) . '%';
         }
-
     }
 
     public function add() {
-        if (!empty($this->request->data)) {
-            $this->Lutador->create();
-            if ($this->Lutador->saveAll($this->request->data)) {
-                $this->Flash->set('Lutador gravado com êxito.');
-                $this->redirect('/lutadors');
-            }
-        }
-        $fields = array('Categoria.id', 'Categoria.nome_categoria');
-        $categorias = $this->Lutador->Categoria->find('list', compact('fields'));
-        $this->set('categorias', $categorias);
+        parent::add();
+        $this->setCategorias();
     }
     
-    public function edit($id = null) {
-        if (!empty($this->request->data)) {
-            if ($this->Lutador->saveAll($this->request->data)) {
-                $this->Flash->set('Lutador alterado com êxito.');
-                $this->redirect('/lutadors');
-            }
-        }
-        else {
-            $fields = array(
+    public function getEditData($id) {
+        $this->setCategorias();
+        $fields = array(
             'Lutador.id',
             'Lutador.nome', 
             'Lutador.altura', 
@@ -57,11 +42,7 @@ class LutadorsController extends AppController {
             $conditions = array('Lutador.id' => $id);
             $lutador = $this->Lutador->find('first', compact('fields', 'conditions'));
             $lutador['Lutador']['idade'] = date('d-m-Y', strtotime($lutador['Lutador']['idade']));
-            $this->request->data = $lutador;
-        }
-        $fields = array('Categoria.id', 'Categoria.nome_categoria');
-        $categorias = $this->Lutador->Categoria->find('list', compact('fields'));
-        $this->set('categorias', $categorias);
+            return $lutador;
     }
 
     public function view($id = null) {
@@ -77,9 +58,7 @@ class LutadorsController extends AppController {
             'Lutador.estilo_de_luta');
             $conditions = array('Lutador.id' => $id);
             $this->request->data = $this->Lutador->find('first', compact('fields', 'conditions'));
-            $fields = array('Categoria.id', 'Categoria.nome_categoria');
-            $categorias = $this->Lutador->Categoria->find('list', compact('fields'));
-            $this->set('categorias', $categorias);
+            $this->setCategorias();
     }
 
     public function delete($id) {
@@ -100,10 +79,14 @@ class LutadorsController extends AppController {
             'Lutador.estilo_de_luta',
         );
         $lutadores = $this->Lutador->find('all', compact('fields'));
-        // debug($lutadores);
-        // exit();
         $this->set('lutadores', $lutadores);
         
+    }
+    
+    public function setCategorias() {
+        $fields = array('Categoria.id', 'Categoria.nome_categoria');
+        $categorias = $this->Lutador->Categoria->find('list', compact('fields'));
+        $this->set('categorias', $categorias);
     }
 }
 ?>

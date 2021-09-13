@@ -6825,3 +6825,12 @@ Stack Trace:
 #12 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutasController), Object(CakeRequest))
 #13 C:\xampp\htdocs\ufc_rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2021-09-12 20:02:37 Error: [Error] Call to undefined method LutadorsController::setPaginateConditions()
+Request URL: /rankings/lutadors
+Stack Trace:
+#0 [internal function]: AppController->index()
+#1 C:\xampp\cake\lib\Cake\Controller\Controller.php(499): ReflectionMethod->invokeArgs(Object(LutadorsController), Array)
+#2 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 C:\xampp\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(LutadorsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\rankings\index.php(117): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

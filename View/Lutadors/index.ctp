@@ -18,7 +18,7 @@ $tableHeaders = $this->Html->tableHeaders($titulos);
 $this->assign('tableHeaders', $tableHeaders);
 
 $lutadoresListFixed = array();
-foreach ($lutadores as $lutador) {
+foreach ($lutadors as $lutador) {
     $editLink = $this->Js->link('Editar', '/lutadors/edit/' . $lutador['Lutador']['id'], array('update' => '#content'));
     $deleteLink = $this->Js->link('Excluir', '/lutadors/delete/' . $lutador['Lutador']['id'], array('update' => '#content'));
     $viewLink = $this->Js->link($lutador['Lutador']['nome'], '/lutadors/view/' . $lutador['Lutador']['id'], array('update' => '#content'));

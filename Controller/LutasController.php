@@ -16,20 +16,14 @@ class LutasController extends AppController {
         'order' => array('Luta.data_luta' => 'asc')
     );
     
-    public function index() {
-        $lutas = $this->paginate();
-        $this->set('lutas', $lutas);
+    public function setPaginateConditions() {
+        // if ($this->request->is('post') && !empty($this->request->data['Usuario']['nome'])) {
+        //     $this->paginate['conditions']['Usuario.nome LIKE'] = '%' . trim($this->request->data['Usuario']['nome']) . '%';
+        // }
     }
     
     public function add() {
-       if (!empty($this->request->data)) {
-           debug($this->request->data);
-            $this->Luta->create();
-            if (debug($this->Luta->saveAll($this->request->data))) {
-                $this->Flash->set('Deu certo');
-                
-            }
-       }
+       parent::add();
        $fields = array('Lutador.id', 'Lutador.nome');
        $lutadores =  $this->Luta->Lutador->find('list', compact('fields'));
        $this->set('lutadores', $lutadores);

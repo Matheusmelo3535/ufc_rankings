@@ -58,13 +58,41 @@ class AppController extends Controller {
         $this->Auth->mapActions(['read' => ['report']]);
     }
 
-    public function index() {
-        $this->setPaginateConditions();
-        $this->set($this->getControllerName(), $this->paginate());
-
+   public function index() {
+       $this->setPaginateConditions();
+       try {
+           $this->set($this->getControllerName(), $this->paginate());
+       } catch (NotFoundException $e) {
+           $this->redirect('/' .  $this->getControllerName());
+       }
+   }
+   
+   public function add() {
+       if (!empty($this->request->data)) {
+           $this->{$this->getModelName()}->create();
+           if ($this->{$this->getModelName()}->save($this->request->data)) {
+               $this->Flash->bootstrap('Gravado com êxito!', array('key' => 'success'));
+               $this->redirect('/' . $this->getControllerName());
+           }
+       }
+   }
+   
+   public function edit($id = null) {
+        if (!empty($this->request->data)) {
+            if ($this->{$this->getModelName()}->saveAll($this->request->data)) {
+                $this->Flash->bootstrap('Alteração realizada com êxito!', array('key' => 'success'));
+                $this->redirect('/' . $this->getControllerName());
+            }
+        } else {
+            $this->request->data = $this->getEditData($id);
+        }
     }
 
     public function getControllerName() {
         return $this->request->params['controller'];
+    }
+    
+    public function getModelName() {
+       return $this->modelClass;
     }
 }

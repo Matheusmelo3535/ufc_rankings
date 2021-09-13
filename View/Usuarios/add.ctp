@@ -1,5 +1,8 @@
 <?php
 
+
+debug($aros);
+exit;
 $form = $this->Form->create('Usuario');
 $form .=
     $this->Html->div('form-row d-flex justify-content-center align-items-center mt-4',
