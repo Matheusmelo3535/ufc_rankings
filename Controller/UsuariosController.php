@@ -16,7 +16,7 @@ class UsuariosController extends AppController {
     );
 
     public function beforeFilter() {
-        $this->Auth->allow(array('logout','login'));            
+        $this->Auth->allow(array('logout','login'));
         parent::beforeFilter();
     }
     
@@ -51,45 +51,25 @@ class UsuariosController extends AppController {
     
     public function add() {
         parent::add();
-        $aros = $this->Acl->Aro->find('list', [
-           'conditions' => ['Aro.parent_id IS NULL'],
-           'fields' => ['Aro.id', 'Aro.alias'] 
-        ]);
-        $this->set('aros', $aros);
+        $this->setAros();
     }
     
-    public function edit($id = null) {
-        if (!empty($this->request->data)) {
-            if ($this->Usuario->save($this->request->data)) {
-                $this->Flash->bootstrap('Usuário editado com êxito', array('key' => 'success'));
-                $this->redirect('/usuarios');
-            }
-        }
-        else {
-            $fields = array(
-              'Usuario.id',
-              'Usuario.nome',
-              'Usuario.login',
-              'Usuario.senha'
-            );
-            $conditions = array('Usuario.id' => $id );
-            $this->request->data = $this->Usuario->find('first', compact('fields', 'conditions'));
-        }
-    }
-    
-    public function view($id = null) {
+    public function getEditData($id) {
+        $this->setAros();
         $fields = array(
             'Usuario.id',
             'Usuario.nome',
-            'Usuario.login'
+            'Usuario.login',
         );
         $conditions = array('Usuario.id' => $id);
-        $this->request->data = $this->Usuario->find('first', compact('fields', 'conditions'));
+        $usuario = $this->Usuario->find('first', compact('fields', 'conditions'));
+        return $usuario; 
     }
-
-    public function delete($id) {
-        $this->Usuario->delete($id);
-        $this->Flash->bootstrap('Usuario excluído com êxito', array('key' => 'success'));
-        $this->redirect('/usuarios');
+    
+    public function setAros() {
+        $aros = $this->Acl->Aro->find('list', [
+            'fields' => ['Aro.id', 'Aro.alias'] 
+         ]);
+         $this->set('aros', $aros);
     }
 }

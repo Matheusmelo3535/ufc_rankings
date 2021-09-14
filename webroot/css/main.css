@@ -19,24 +19,19 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
-
 .header-links {
     font-family: 'Roboto', sans-serif;
     color: black;
     font-size: 1.3rem;
 }
 
-
 .add-atleta-link {
     text-decoration: none;
-    
 }
 
 .add-atleta-link i {
     font-size: 1.8em;
 }
-
 
 .borda-redonda {
     border-radius: 2rem;
@@ -46,9 +41,6 @@ body {
     background-color: whitesmoke;
     padding: 2rem;
 }
-
-
-
 
 footer {
     background-color:black;
@@ -63,7 +55,6 @@ footer span {
     color: whitesmoke;
 }
 
-
 .ufc-banner {
 
   background-image: url(/assets/images/ufc-banner.jpg); 
@@ -75,13 +66,11 @@ footer span {
     
 }
 
-
 .img-carousel {
     object-fit: cover;
     object-position: 50% 30%;
     height: 600px;
 }
-
 
 .view-do-atleta h4 {
     font-size: 2rem;
@@ -92,7 +81,6 @@ footer span {
     font-size: 1.5rem;
     line-height: 2;
 }
-
 
 .error-message{
     color: red;

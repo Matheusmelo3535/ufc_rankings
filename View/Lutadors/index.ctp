@@ -18,6 +18,7 @@ $tableHeaders = $this->Html->tableHeaders($titulos);
 $this->assign('tableHeaders', $tableHeaders);
 
 $lutadoresListFixed = array();
+
 foreach ($lutadors as $lutador) {
     $editLink = $this->Js->link('Editar', '/lutadors/edit/' . $lutador['Lutador']['id'], array('update' => '#content'));
     $deleteLink = $this->Js->link('Excluir', '/lutadors/delete/' . $lutador['Lutador']['id'], array('update' => '#content'));
@@ -26,7 +27,6 @@ foreach ($lutadors as $lutador) {
     $currentTime = new DateTime();
     $conversaoParaIdade = $currentTime->diff($dataNasc);
     $idadeLutador = $conversaoParaIdade->y;
-    
     $lutadoresListFixed[] = array(
         'rank' => $lutador['Lutador']['rank'],
         'nome' => $viewLink,
@@ -42,4 +42,3 @@ foreach ($lutadors as $lutador) {
 
 $tableCells = $this->Html->tableCells($lutadoresListFixed);
 $this->assign('tableCells', $tableCells);
-?>

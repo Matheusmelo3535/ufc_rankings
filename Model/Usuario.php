@@ -20,6 +20,12 @@ class Usuario extends AppModel {
                 'rule' => 'isUnique',
                 'message' => 'Login já existente'
             )
+        ),
+        'senha' => array(
+            'senhaNotBlank' => array(
+                'rule' => 'notBlank',
+                'message' => 'Por favor preencha com a nova senha'
+            )
         )
     );    
     
@@ -28,6 +34,7 @@ class Usuario extends AppModel {
             $passwordHasher = new SimplePasswordHasher(array('hashType' => 'sha256'));
             $this->data['Usuario']['senha'] = $passwordHasher->hash($this->data['Usuario']['senha']);
         }
+
         return true;
     }
 }

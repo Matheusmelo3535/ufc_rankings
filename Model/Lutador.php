@@ -5,7 +5,6 @@ class Lutador extends AppModel {
     public $hasAndBelongsToMany = array(
         'Categoria'
     );
-
     
     // regex utilizada \pL - Matches anything in the Unicode letter category
     // \pM - Combining marks (e.g. combining diacritics)
@@ -26,7 +25,7 @@ class Lutador extends AppModel {
                 'on' => 'create',
                 'message' => 'Esse rank não está vago'
             ),
-        ),        
+        ),
         'nome' => array(
             'nomeNotBlank' => array(
                 'rule' => 'notBlank',
@@ -109,6 +108,7 @@ class Lutador extends AppModel {
     
     public function checarMaiorDeIdade($check) {
         $dataDeNascimento = strtotime($check['idade']);
+
         return time() >= strtotime('+18 years', $dataDeNascimento);
     }
 
@@ -118,6 +118,7 @@ class Lutador extends AppModel {
             $data = str_replace('/', '-', $this->data['Lutador']['idade']);
             $this->data['Lutador']['idade'] = date('Y-m-d', strtotime($data));
         }
+
         return $continue;
     }
 }

@@ -64,10 +64,10 @@ class AppController extends Controller {
        try {
            $this->set($this->getControllerName(), $this->paginate());
        } catch (NotFoundException $e) {
-           $this->redirect('/' .  $this->getControllerName());
+           $this->redirect('/' . $this->getControllerName());
        }
    }
-   
+
    public function add() {
        if (!empty($this->request->data)) {
            $this->{$this->getModelName()}->create();
@@ -77,7 +77,7 @@ class AppController extends Controller {
            }
        }
    }
-   
+
    public function edit($id = null) {
         if (!empty($this->request->data)) {
             if ($this->{$this->getModelName()}->saveAll($this->request->data)) {
@@ -108,7 +108,7 @@ class AppController extends Controller {
     public function getControllerName() {
         return $this->request->params['controller'];
     }
-    
+
     public function getModelName() {
        return $this->modelClass;
     }

@@ -53,10 +53,6 @@ class LutadorsController extends AppController {
             return $lutador;
     }
 
-    // public function view($id = null) {
-    //    parent::view($id);
-    // }
-
     public function setCategorias() {
         $fields = array('Categoria.id', 'Categoria.nome_categoria');
         $categorias = $this->Lutador->Categoria->find('list', compact('fields'));

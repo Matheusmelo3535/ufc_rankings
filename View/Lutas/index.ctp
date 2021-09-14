@@ -12,7 +12,6 @@ $searchFields = $this->Form->input('Lutador.nome', array(
 ));
 $this->assign('searchFields', $searchFields);
 
-
 $titulos = array('Data da Luta', 'Vencedor', 'Perdedor', '');
 $tableHeaders = $this->Html->tableHeaders($titulos);
 $this->assign('tableHeaders', $tableHeaders);
@@ -27,15 +26,9 @@ foreach ($lutas as $luta) {
         'data_luta' => $viewLink,
         'lutador_vencedor' => $luta['lutador_vencedor']['nome'],
         'lutador_perdedor' => $luta['lutador_perdedor']['nome'],
-        $editLink .  ' '  . $deleteLink
+        $editLink . ' ' . $deleteLink
     );
 }
 
 $tableCells = $this->Html->tableCells($lutasListFixed);
 $this->assign('tableCells', $tableCells);
-
-
-
-
-
-
