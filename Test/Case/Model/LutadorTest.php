@@ -8,7 +8,13 @@ class LutadorTest extends AppTest {
     public $Lutador = null;
 
     public function setUp() {
+        parent::setUp();
         $this->Lutador = ClassRegistry::init('Lutador');
+    }
+
+    public function tearDown() {
+        parent::tearDown();
+        unset($this->Lutador);
     }
 
     public function testExisteModel() {

@@ -60,6 +60,7 @@ class UsuariosController extends AppController {
             'Usuario.id',
             'Usuario.nome',
             'Usuario.login',
+            'Usuario.aro_parent_id'
         );
         $conditions = array('Usuario.id' => $id);
         $usuario = $this->Usuario->find('first', compact('fields', 'conditions'));

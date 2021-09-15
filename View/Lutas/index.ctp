@@ -3,12 +3,12 @@ $this->extend('/Common/index');
 
 $this->assign('titulo', 'Lutas');
 
-$searchFields = $this->Form->input('Luta.lutador_vencedor_or_lutador_perdedor', array(
+$searchFields = $this->Form->input('lutador_vencedor.nome', array(
     'required' => false,
     'label' => false,
     'class' => 'form-control mb-2 mr-sm-2',
     'div' => false,
-    'placeholder' => 'Nome...'
+    'placeholder' => 'Nome do vencedor...'
 ));
 $this->assign('searchFields', $searchFields);
 

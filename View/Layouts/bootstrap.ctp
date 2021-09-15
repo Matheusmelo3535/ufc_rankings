@@ -35,6 +35,9 @@
                             <li class="nav-item">
                                 <?= $this->Html->link('Usuarios', '/usuarios', array('class' => 'nav-link fs-5')); ?>
                             </li>
+                            <li class="nav-item">
+                                <?= $this->Html->link('Lutas', '/lutas', array('class' => 'nav-link fs-5')); ?>
+                            </li>
                         </ul>
                     </div>
                 </div>

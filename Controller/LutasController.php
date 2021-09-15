@@ -26,16 +26,15 @@ class LutasController extends AppController {
     public function setPaginateConditions() {
         $nome = '';
         if ($this->request->is('post')) {
-            $nome = $this->request->data['Luta']['lutador_vencedor_or_lutador_perdedor'];
-            $this->Session->write('Luta.lutador_vencedor_or_lutador_perdedor', $nome);
+            $nome = $this->request->data['lutador_vencedor']['nome'];
+            $this->Session->write('lutador_vencedor.nome', $nome);
         } else {
-            $nome = $this->Session->read('Luta.lutador_vencedor_or_lutador_perdedor');
-            $this->request->data('Luta.lutador_vencedor_or_lutador_perdedor', $nome);
+            $nome = $this->Session->read('lutador_vencedor.nome');
+            $this->request->data('lutador_vencedor.nome', $nome);
         }
         if (!empty($nome)) {
             $this->paginate['conditions']['or'] = array(
-                'Luta.lutador_vencedor LIKE' => '%' .trim($nome) . '%',
-                'Luta.lutador_perdedor LIKE' => '%' . trim($nome) . '%'
+                'lutador_vencedor.nome LIKE' => '%' .trim($nome) . '%',
             );
         }
     }
@@ -59,12 +58,9 @@ class LutasController extends AppController {
         return $luta;
     }
     
-    
     public function setLutadores() {
         $fields = array('Lutador.id', 'Lutador.nome');
         $lutadors = $this->Luta->Lutador->find('list', compact('fields'));
         $this->set('lutadors', $lutadors);
     }
 }
-
-?>

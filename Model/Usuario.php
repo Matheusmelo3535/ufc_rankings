@@ -3,6 +3,7 @@
 App::uses('AppModel', 'Model');
 App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
 
+
 class Usuario extends AppModel {
     public $validate = array(
         'nome' => array(
@@ -16,10 +17,14 @@ class Usuario extends AppModel {
             )
         ),
         'login' => array(
-            'isUnique' => array(
+            'LoginUnique' => array(
                 'rule' => 'isUnique',
                 'message' => 'Login já existente'
-            )
+            ),
+            'LoginBlank' => array(
+                'rule' => 'notBlank',
+                'message' => 'Informe o login'
+            ),
         ),
         'senha' => array(
             'senhaNotBlank' => array(
@@ -37,5 +42,27 @@ class Usuario extends AppModel {
 
         return true;
     }
+
+    public function afterSave($created, $options = array()) {
+        $this->saveAro();
+    }
+
+    public function saveAro() {
+        // 1 - verificar se existe um aro para esse usuario
+        // 2-  se existir, atualiza, caso contrário cria
+        // 3- save Aro
+
+        $aroModel = ClassRegistry::init('Aro');
+        $aro = $aroModel->findByForeignKey($this->data['Usuario']['id']);
+        $usuarioAro = ['model' => 'Usuario', 'foreign_key' => $this->data['Usuario']['id'], 'parent_id' => $this->data['Usuario']['aro_parent_id']];
+        if (empty($aro)) {
+            $aroModel->create();
+        } else {
+            $usuarioAro['id'] = $aro['Aro']['id'];
+        }
+        $aroModel->save($usuarioAro);
+    }
+
+
 }
 ?>

@@ -18,7 +18,43 @@ class UsuarioTest extends AppTest {
     }
     
     public function testExisteModel() {
-        $usuario = ClassRegistry::init('Usuario');
         $this->assertTrue(is_a($this->Usuario, 'Usuario'));
+    }
+
+    public function testCadastroComExito() {
+        $data = array('Usuario' => array('nome' => 'Matheuszera', 'login' => 'naosei', 'senha' => 'oioioi'));
+        $saved = $this->Usuario->save($data);
+        $nomeSaved = $saved['Usuario']['nome'];
+        $this->assertSame($nomeSaved, 'Matheuszera');
+    }
+
+    public function testNomeEmpty() {
+        $field = 'nome';
+        $content = '';
+        $this->assertEqualsInvalidField($field, $content);
+    }
+
+    public function testNomeInvalidSize2char() {
+        $field = 'nome';
+        $content = 'oi';
+        $this->assertEqualsInvalidField($field, $content);
+    }
+
+    public function testLoginDuplicado() {
+        $field = 'login';
+        $content = 'fixtureLogin';
+        $this->assertEqualsInvalidField($field, $content);
+    }
+
+    public function testLoginBlank() {
+        $field = 'login';
+        $content = '';
+        $this->assertEqualsInvalidField($field, $content);
+    }
+
+    public function testSenhaBlank() {
+        $field = 'senha';
+        $content = '';
+        $this->assertEqualsInvalidField($field, $content);
     }
 }
