@@ -20,7 +20,8 @@ $this->Html->div('form-row d-flex justify-content-center mb-4',
         $this->Form->input('Categoria.Categoria',array(
             'type' => 'select',
             'multiple' => true,
-            'label' => 'Categorias'
+            'label' => 'Categorias',
+            'class' => 'form-select'
         ))
     ) .
     $this->Html->div('form-group col-md-2 m-3',

@@ -1,6 +1,6 @@
 <?php
 $this->extend('/Common/form');
-$this->assign('titulo', 'Nova Luta');
+$this->assign('titulo', 'Alterar Luta');
 
 $formFields = $this->element('formCreate');
 
@@ -10,7 +10,8 @@ $formFields .= $this->Html->div('form-row d-flex justify-content-center',
     ) .
     $this->Html->div('form-group col-md-2 m-3',
         $this->Form->input('Luta.lutador_perdedor', array('type' => 'select' , 'options' => $lutadors, 'class' => 'form-select', 'label' => 'Perdedor'))
-    )
+    ) .
+    $this->Form->input('Luta.id', array('type' => 'hidden'))
 ) .
 $this->Html->div('form-row d-flex justify-content-center',
     
@@ -29,3 +30,4 @@ $this->Js->buffer('$(".datepicker").datepicker({
     language: "pt-BR"
     })'
 );
+

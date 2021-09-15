@@ -35,10 +35,10 @@ $paginateBar = $this->Html->div('row',
     $this->Html->div('col-md-6', $paginate) . 
     $this->Html->div('col-md-6', $paginateCount)
 );
-echo $this->Flash->render('warning'); 
-echo $this->Flash->render('success'); 
-
+ 
 echo $this->Html->tag('h1', $this->fetch('titulo'), array('class' => 'text-center m-5'));
+echo $this->Flash->render('warning'); 
+echo $this->Flash->render('success');
 echo $filtroBar;
 echo $table;
 echo $paginateBar;

@@ -46,11 +46,13 @@ class LutadorsController extends AppController {
             'Lutador.vitorias', 
             'Lutador.derrotas', 
             'Lutador.rank',
-            'Lutador.estilo_de_luta');
-            $conditions = array('Lutador.id' => $id);
-            $lutador = $this->Lutador->find('first', compact('fields', 'conditions'));
-            $lutador['Lutador']['idade'] = date('d-m-Y', strtotime($lutador['Lutador']['idade']));
-            return $lutador;
+            'Lutador.estilo_de_luta'
+        );
+        $conditions = array('Lutador.id' => $id);
+        $lutador = $this->Lutador->find('first', compact('fields', 'conditions'));
+        $lutador['Lutador']['idade'] = date('d-m-Y', strtotime($lutador['Lutador']['idade']));
+        
+        return $lutador;
     }
 
     public function setCategorias() {

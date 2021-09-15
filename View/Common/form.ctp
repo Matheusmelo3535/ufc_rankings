@@ -14,6 +14,8 @@ $form .= $this->Form->end();
 echo $this->Html->tag('h1', $this->fetch('titulo'), array('class' => 'text-center m-5'));
 echo $form;
 
+$this->Js->buffer('$(".form-error").addClass("is-invalid");');
+
 if ($this->request->is('ajax')) {
     echo $this->Js->writeBuffer();
 }
