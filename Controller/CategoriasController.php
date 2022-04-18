@@ -16,6 +16,7 @@ class CategoriasController extends AppController {
     );
     
     public function setPaginateConditions() {
+
         $nome = '';
         if ($this->request->is('post')) {
             $nome = $this->request->data['Categoria']['nome_categoria'];
